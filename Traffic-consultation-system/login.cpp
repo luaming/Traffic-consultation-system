@@ -1,14 +1,14 @@
 #include "login.h"
+#include "ui_login.h"
 
 LogIn::LogIn(QWidget *parent)
-    : QMainWindow{parent}
-{}
+    : QMainWindow(parent)
+    , ui(new Ui::LogIn)
+{
+    ui->setupUi(this);
+}
 
-void LogIn::paintEvent(QPaintEvent*){
-    QPainter painter(this);
-    painter.setRenderHint(QPainter::Antialiasing,true);
-    QPixmap pix;
-    pix.load(":/LogIn.jpg");
-    painter.drawPixmap(0,0,this->width(),this->height(),pix);
-
+LogIn::~LogIn()
+{
+    delete ui;
 }

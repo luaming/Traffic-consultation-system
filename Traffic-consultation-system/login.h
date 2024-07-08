@@ -2,18 +2,22 @@
 #define LOGIN_H
 
 #include <QMainWindow>
-#include<QPainter>
-#include<QPushButton>
-#include<QLineEdit>
+
+QT_BEGIN_NAMESPACE
+namespace Ui {
+class LogIn;
+}
+QT_END_NAMESPACE
 
 class LogIn : public QMainWindow
 {
     Q_OBJECT
+
 public:
-    explicit LogIn(QWidget *parent = nullptr);
+    LogIn(QWidget *parent = nullptr);
+    ~LogIn();
 
-    void paintEvent(QPaintEvent*);
-signals:
+private:
+    Ui::LogIn *ui;
 };
-
 #endif // LOGIN_H
