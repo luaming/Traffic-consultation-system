@@ -6,6 +6,10 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    logscene=new LogIn();
+    this->hide();
+    logscene->show();
 }
 
 MainWindow::~MainWindow()

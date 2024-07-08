@@ -9,4 +9,6 @@ void LogIn::paintEvent(QPaintEvent*){
     painter.setRenderHint(QPainter::Antialiasing,true);
     QPixmap pix;
     pix.load(":/LogIn.jpg");
+    painter.drawPixmap(0,0,this->width(),this->height(),pix);
+
 }

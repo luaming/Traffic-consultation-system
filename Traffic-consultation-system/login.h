@@ -2,6 +2,9 @@
 #define LOGIN_H
 
 #include <QMainWindow>
+#include<QPainter>
+#include<QPushButton>
+#include<QLineEdit>
 
 class LogIn : public QMainWindow
 {
@@ -9,6 +12,7 @@ class LogIn : public QMainWindow
 public:
     explicit LogIn(QWidget *parent = nullptr);
 
+    void paintEvent(QPaintEvent*);
 signals:
 };
 
