@@ -15,7 +15,8 @@ SOURCES += \
 
 HEADERS += \
     login.h \
-    mainwindow.h
+    mainwindow.h \
+    staff.h
 
 FORMS += \
     mainwindow.ui
