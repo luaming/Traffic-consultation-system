@@ -79,9 +79,9 @@ background-color: rgb(247, 247, 247);
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>0</y>
-        <width>27</width>
-        <height>27</height>
+        <y>1</y>
+        <width>25</width>
+        <height>25</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -92,13 +92,13 @@ background-color: rgb(247, 247, 247);
       </property>
       <property name="minimumSize">
        <size>
-        <width>27</width>
-        <height>27</height>
+        <width>25</width>
+        <height>25</height>
        </size>
       </property>
       <property name="styleSheet">
        <string notr="true">*{
- border-radius: 13px; border: none; background: rgb(48,135,229);
+ border-radius: 12px; border: none; background: rgb(48,135,229);
 }</string>
       </property>
       <property name="text">
@@ -154,7 +154,7 @@ background-color: rgb(247, 247, 247);
       <property name="styleSheet">
        <string notr="true">*{
 border:none;
-background-color: rgb(250, 250, 250); 
+background-color: rgb(255, 255, 255); 
 border-radius: 13px
 }</string>
       </property>
@@ -170,7 +170,7 @@ border-radius: 13px
       </property>
       <property name="minimumSize">
        <size>
-        <width>101</width>
+        <width>80</width>
         <height>27</height>
        </size>
       </property>
@@ -184,7 +184,7 @@ border-radius: 13px
        <string>目的地</string>
       </property>
       <property name="alignment">
-       <set>Qt::AlignCenter</set>
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEdit_2">
@@ -211,9 +211,37 @@ border-radius: 13px
       <property name="styleSheet">
        <string notr="true">*{
 border:none;
-background-color: rgb(250, 250, 250); 
+background-color: rgb(255, 255, 255); 
 border-radius: 13px
 }</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>81</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>81</width>
+        <height>27</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>  出发地</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
@@ -246,9 +274,9 @@ border-radius: 13px
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>0</y>
-        <width>27</width>
-        <height>27</height>
+        <y>1</y>
+        <width>25</width>
+        <height>25</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -259,13 +287,13 @@ border-radius: 13px
       </property>
       <property name="minimumSize">
        <size>
-        <width>27</width>
-        <height>27</height>
+        <width>25</width>
+        <height>25</height>
        </size>
       </property>
       <property name="styleSheet">
        <string notr="true">*{
- border-radius: 13px; border: none; background: rgb(82,154,233);
+ border-radius: 12px; border: none; background: rgb(82,154,233);
 }</string>
       </property>
       <property name="text">
@@ -321,7 +349,7 @@ border-radius: 13px
       <property name="styleSheet">
        <string notr="true">*{
 border:none;
-background-color: rgb(250, 250, 250); 
+background-color: rgb(255, 255, 255); 
 border-radius: 13px
 }</string>
       </property>
@@ -375,7 +403,7 @@ border-radius: 13px
       <property name="styleSheet">
        <string notr="true">*{
 border:none;
-background-color: rgb(250, 250, 250); 
+background-color: rgb(255, 255, 255); 
 border-radius: 13px
 }</string>
       </property>
@@ -429,7 +457,7 @@ border-radius: 13px
       <property name="styleSheet">
        <string notr="true">*{
 border:none;
-background-color: rgb(250, 250, 250); 
+background-color: rgb(255, 255, 255); 
 border-radius: 13px
 }</string>
       </property>
@@ -491,20 +519,20 @@ border-radius: 13px
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>0</y>
-        <width>27</width>
-        <height>27</height>
+        <y>1</y>
+        <width>25</width>
+        <height>25</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
-        <width>27</width>
-        <height>27</height>
+        <width>25</width>
+        <height>25</height>
        </size>
       </property>
       <property name="styleSheet">
        <string notr="true">*{
- border-radius: 13px; border: none; background: rgb(152,193,237);
+ border-radius: 12px; border: none; background: rgb(152,193,237);
 }</string>
       </property>
       <property name="text">
@@ -686,20 +714,20 @@ border-radius: 13px
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>0</y>
-        <width>27</width>
-        <height>27</height>
+        <y>1</y>
+        <width>25</width>
+        <height>25</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
-        <width>27</width>
-        <height>27</height>
+        <width>25</width>
+        <height>25</height>
        </size>
       </property>
       <property name="styleSheet">
        <string notr="true">*{
- border-radius: 13px; border: none; background: rgb(182,210,241);
+ border-radius: 12px; border: none; background: rgb(182,210,241);
 }</string>
       </property>
       <property name="text">
@@ -1070,9 +1098,9 @@ border-radius: 10px;
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>0</y>
-        <width>27</width>
-        <height>27</height>
+        <y>1</y>
+        <width>25</width>
+        <height>25</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -1083,13 +1111,13 @@ border-radius: 10px;
       </property>
       <property name="minimumSize">
        <size>
-        <width>27</width>
-        <height>27</height>
+        <width>25</width>
+        <height>25</height>
        </size>
       </property>
       <property name="styleSheet">
        <string notr="true">*{
- border-radius: 13px; border: none; background: rgb(122,176,236);
+ border-radius: 12px; border: none; background: rgb(122,176,236);
 }</string>
       </property>
       <property name="text">
@@ -1472,8 +1500,8 @@ border-radius: 10px;
       </property>
       <property name="iconSize">
        <size>
-        <width>18</width>
-        <height>18</height>
+        <width>27</width>
+        <height>27</height>
        </size>
       </property>
       <property name="checked">
@@ -1502,7 +1530,7 @@ border-radius: 10px;
     </property>
     <property name="styleSheet">
      <string notr="true">#bottom{
-background-color:rgb(250,250,250);
+background-color: rgb(255, 255, 255); 
 }
 #mainbody{
 background-color:rgb(247,247,247);
@@ -1519,7 +1547,9 @@ background-color:rgb(247,247,247);
      </property>
      <property name="font">
       <font>
+       <family>微软雅黑</family>
        <pointsize>25</pointsize>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -1541,7 +1571,9 @@ background-color:rgb(247,247,247);
      </property>
      <property name="font">
       <font>
+       <family>微软雅黑</family>
        <pointsize>25</pointsize>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -1558,8 +1590,16 @@ background-color:rgb(247,247,247);
        <x>0</x>
        <y>0</y>
        <width>800</width>
-       <height>4</height>
+       <height>1</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>2</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(190,190,190);</string>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -1570,9 +1610,15 @@ background-color:rgb(247,247,247);
       <rect>
        <x>400</x>
        <y>0</y>
-       <width>4</width>
+       <width>1</width>
        <height>80</height>
       </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(190,190,190);</string>
      </property>
      <property name="orientation">
       <enum>Qt::Vertical</enum>
