@@ -30,6 +30,7 @@ def get_price_url(text, date, from_station, to_station):
     return url
 
 def get_price(date, from_station, to_station):
+    print(date, from_station, to_station)
     text = getStationName()
     url = get_price_url(text, date, from_station, to_station)
 
