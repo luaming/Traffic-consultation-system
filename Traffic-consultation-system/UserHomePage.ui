@@ -183,7 +183,7 @@ background-color:#e2e2e2;</string>
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="styleSheet">
      <string notr="true"/>
@@ -195,7 +195,7 @@ background-color:#e2e2e2;</string>
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <property name="iconSize">
      <size>
@@ -318,7 +318,7 @@ border-radius: 10px;
 }</string>
        </property>
        <property name="text">
-        <string>查询汽车票</string>
+        <string>查询火车票</string>
        </property>
        <property name="iconSize">
         <size>
@@ -544,7 +544,7 @@ border-radius: 10px;
 }</string>
        </property>
        <property name="text">
-        <string>查询汽车票</string>
+        <string>查询飞机票</string>
        </property>
        <property name="iconSize">
         <size>
