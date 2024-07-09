@@ -2,7 +2,7 @@
 #define LOGIN_H
 
 #include <QMainWindow>
-
+#include"usermainpage.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class LogIn;
