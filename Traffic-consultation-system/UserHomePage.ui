@@ -163,7 +163,7 @@ background-color:#e2e2e2;</string>
      <rect>
       <x>113</x>
       <y>113</y>
-      <width>578</width>
+      <width>572</width>
       <height>220</height>
      </rect>
     </property>
@@ -186,7 +186,9 @@ background-color:#e2e2e2;</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">QTabBar::tab:selected { color: #5172c4; background-color: #ffffff;}
+QTabBar::tab:!selected{background-color:rgb(238,238,238);}
+QTabWidget::pane { border-radius: 10px; }</string>
     </property>
     <property name="tabPosition">
      <enum>QTabWidget::North</enum>
@@ -195,7 +197,7 @@ background-color:#e2e2e2;</string>
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <property name="iconSize">
      <size>
@@ -669,14 +671,14 @@ QPushButton:pressed{  background-color: #5172c4;}</string>
        <normaloff>:/car.png</normaloff>:/car.png</iconset>
      </attribute>
      <attribute name="title">
-      <string>汽车票   </string>
+      <string>汽车票    </string>
      </attribute>
      <widget class="QFrame" name="frame_3">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>574</width>
+        <width>575</width>
         <height>171</height>
        </rect>
       </property>
@@ -919,8 +921,17 @@ QPushButton:pressed{  background-color: #5172c4;}</string>
       <height>38</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color:#e2e2e2;border:none;</string>
+     <string notr="true">background-color:#e2e2e2;border:none;color:grey</string>
+    </property>
+    <property name="text">
+     <string>请输入查询城市</string>
     </property>
    </widget>
   </widget>
