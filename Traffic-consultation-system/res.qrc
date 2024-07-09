@@ -3,5 +3,7 @@
         <file>train.png</file>
         <file>car.png</file>
         <file>plane.png</file>
+        <file>search.png</file>
+        <file>redAndblue.png</file>
     </qresource>
 </RCC>

@@ -11,13 +11,16 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     login.cpp \
+    userhomepage.cpp \
     usermainpage.cpp
 
 HEADERS += \
     login.h \
+    userhomepage.h \
     usermainpage.h
 
 FORMS += \
+    UserHomePage.ui \
     UserMainPage.ui \
     login.ui
 

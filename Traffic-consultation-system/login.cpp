@@ -8,7 +8,9 @@ LogIn::LogIn(QWidget *parent)
     ui->setupUi(this);
     UserMainPage*UMP=new UserMainPage;
     this->hide();
-    UMP->show();
+    //UMP->show();
+    UserHomePage*UHP=new UserHomePage;
+    UHP->show();
 }
 
 LogIn::~LogIn()

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include"usermainpage.h"
+#include"userhomepage.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class LogIn;
