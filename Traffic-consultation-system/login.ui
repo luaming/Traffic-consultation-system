@@ -206,6 +206,9 @@ border-radius: 13px
       <pointsize>15</pointsize>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
@@ -213,7 +216,9 @@ border-radius: 13px
      <string notr="true">*{
 background-color:rgb(159,177,216);
 border-radius: 15px;
-}</string>
+}
+QPushButton:pressed{  background-color: #5172c4;}
+</string>
     </property>
     <property name="text">
      <string>登录系统</string>

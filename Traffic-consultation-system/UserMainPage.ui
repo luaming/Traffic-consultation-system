@@ -1050,7 +1050,8 @@ border-radius: 13px
        <string notr="true">*{
 background-color:rgb(159,177,216);
 border-radius: 10px;
-}</string>
+}
+QPushButton:pressed{  background-color: #5172c4;}</string>
       </property>
       <property name="text">
        <string>一键生成方案</string>

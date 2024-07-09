@@ -7,8 +7,10 @@ LogIn::LogIn(QWidget *parent)
 {
     ui->setupUi(this);
     UserMainPage*UMP=new UserMainPage;
+   // ui->pushButton->setStyleSheet("QPushButton:pressed { background-color: green; }");
+
     this->hide();
-    //UMP->show();
+    UMP->show();
     UserHomePage*UHP=new UserHomePage;
     UHP->show();
 }
