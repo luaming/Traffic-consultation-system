@@ -7,3 +7,9 @@ UserMainPage::UserMainPage(QWidget *parent)
     //ui->pushButton->setStyleSheet("QPushButton:pressed { background-color: green; }");
 
 }
+
+void UserMainPage::on_homebtn_clicked(bool checked)
+{
+    this->UHP();
+}
+

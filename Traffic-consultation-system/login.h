@@ -2,8 +2,8 @@
 #define LOGIN_H
 
 #include <QMainWindow>
-#include"usermainpage.h"
-#include"userhomepage.h"
+#include"staffhomepage.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class LogIn;
@@ -16,7 +16,14 @@ class LogIn : public QMainWindow
 
 public:
     LogIn(QWidget *parent = nullptr);
+    StaffHomePage*SHP;
+
     ~LogIn();
+
+private slots:
+
+
+    void on_loginbtn_clicked();
 
 private:
     Ui::LogIn *ui;

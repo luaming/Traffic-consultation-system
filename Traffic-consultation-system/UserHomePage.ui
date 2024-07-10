@@ -73,7 +73,7 @@ background-color: rgb(255, 255, 255);
       <string>首页</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="minebtn">
      <property name="geometry">
       <rect>
        <x>400</x>
@@ -141,23 +141,6 @@ background-color: rgb(255, 255, 255);
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>245</x>
-      <y>10</y>
-      <width>305</width>
-      <height>38</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius:13px;
-background-color:#e2e2e2;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
@@ -197,7 +180,7 @@ QTabWidget::pane { border-radius: 10px; }</string>
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <property name="iconSize">
      <size>
@@ -280,7 +263,7 @@ QTabWidget::pane { border-radius: 10px; }</string>
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QPushButton" name="trainbtn">
        <property name="geometry">
         <rect>
          <x>121</x>
@@ -507,7 +490,7 @@ QPushButton:pressed{  background-color: #5172c4;}</string>
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QPushButton" name="planebtn">
        <property name="geometry">
         <rect>
          <x>121</x>
@@ -734,7 +717,7 @@ QPushButton:pressed{  background-color: #5172c4;}</string>
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_5">
+      <widget class="QPushButton" name="carbtn">
        <property name="geometry">
         <rect>
          <x>121</x>
@@ -892,47 +875,6 @@ QPushButton:pressed{  background-color: #5172c4;}</string>
       </widget>
      </widget>
     </widget>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>255</x>
-      <y>13</y>
-      <width>38</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="res.qrc">:/search.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_10">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>10</y>
-      <width>251</width>
-      <height>38</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <italic>true</italic>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:#e2e2e2;border:none;color:grey</string>
-    </property>
-    <property name="text">
-     <string>请输入查询城市</string>
-    </property>
    </widget>
   </widget>
  </widget>

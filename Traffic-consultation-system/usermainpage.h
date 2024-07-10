@@ -11,6 +11,9 @@ public:
 private:
     Ui::UserMainPage*ui;
 signals:
+    void UHP();
+private slots:
+    void on_homebtn_clicked(bool checked);
 };
 
 #endif // USERMAINPAGE_H

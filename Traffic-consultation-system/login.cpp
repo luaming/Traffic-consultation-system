@@ -6,16 +6,23 @@ LogIn::LogIn(QWidget *parent)
     , ui(new Ui::LogIn)
 {
     ui->setupUi(this);
-    UserMainPage*UMP=new UserMainPage;
-   // ui->pushButton->setStyleSheet("QPushButton:pressed { background-color: green; }");
+    this->SHP=new StaffHomePage;
 
-    this->hide();
-    UMP->show();
-    UserHomePage*UHP=new UserHomePage;
-    UHP->show();
 }
 
 LogIn::~LogIn()
 {
     delete ui;
 }
+
+
+
+
+void LogIn::on_loginbtn_clicked()
+{
+    if(this->ui->IDedit->text()==""&&this->ui->passwordedit->text()==""){
+        this->close();
+        SHP->show();
+    }
+}
+

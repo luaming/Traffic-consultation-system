@@ -1542,7 +1542,7 @@ background-color: rgb(255, 255, 255);
 background-color:rgb(247,247,247);
 }</string>
     </property>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="homebtn">
      <property name="geometry">
       <rect>
        <x>0</x>
