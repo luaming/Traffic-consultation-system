@@ -6,3 +6,9 @@ UserTicket::UserTicket(QString tool,QWidget *parent)
     ui->setupUi(this);
 
 }
+
+void UserTicket::on_stfbtn_clicked()
+{
+    UHP();
+}
+

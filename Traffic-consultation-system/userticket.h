@@ -9,7 +9,9 @@ class UserTicket : public QMainWindow
 public:
     explicit UserTicket(QString tool,QWidget *parent = nullptr);
     Ui::Ticket*ui;
-signals:
+signals:void UHP();
+private slots:
+    void on_stfbtn_clicked();
 };
 
 #endif // USERTICKET_H

@@ -21,6 +21,7 @@ void UserHomePage::on_trainbtn_clicked()
     ticketresults=new UserTicket("Train");
     this->close();
     ticketresults->show();
+     connect(ticketresults,&UserTicket::UHP,this,[=](){ticketresults->close();this->show();});
 }
 
 
@@ -29,6 +30,7 @@ void UserHomePage::on_planebtn_clicked()
     ticketresults=new UserTicket("Plane");
     this->close();
     ticketresults->show();
+    connect(ticketresults,&UserTicket::UHP,this,[=](){ticketresults->close();this->show();});
 }
 
 
@@ -37,5 +39,6 @@ void UserHomePage::on_carbtn_clicked()
     ticketresults=new UserTicket("car");
     this->close();
     ticketresults->show();
+    connect(ticketresults,&UserTicket::UHP,this,[=](){ticketresults->close();this->show();});
 }
 

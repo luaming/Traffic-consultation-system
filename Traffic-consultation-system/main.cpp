@@ -1,4 +1,4 @@
-#include "homepage.h".h"
+#include "homepage.h"
 
 #include <QApplication>
 

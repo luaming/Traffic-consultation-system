@@ -53,7 +53,7 @@ QTabWidget::pane { border-radius: 10px; }</string>
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="iconSize">
      <size>
@@ -136,7 +136,7 @@ QTabWidget::pane { border-radius: 10px; }</string>
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QPushButton" name="trainbtn">
        <property name="geometry">
         <rect>
          <x>121</x>
@@ -363,7 +363,7 @@ QPushButton:pressed{  background-color: #5172c4;}</string>
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QPushButton" name="planebtn">
        <property name="geometry">
         <rect>
          <x>121</x>
@@ -590,7 +590,7 @@ QPushButton:pressed{  background-color: #5172c4;}</string>
         <enum>Qt::Horizontal</enum>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_5">
+      <widget class="QPushButton" name="carbtn">
        <property name="geometry">
         <rect>
          <x>121</x>
