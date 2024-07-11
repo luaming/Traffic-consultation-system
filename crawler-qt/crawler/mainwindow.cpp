@@ -8,6 +8,8 @@
 #include <QMessageBox>
 #include <QHeaderView>
 #include <QDate>
+#include<fstream>
+using namespace std;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -85,6 +87,8 @@ void MainWindow::onReplyFinished(QNetworkReply *reply) {
                            "开始时", "结束时", "持续时间", "商务座", "一等座", "二等座", "高级软卧", "软卧", "硬卧", "软座", "硬座", "站票"};
     ui->tableWidget->setHorizontalHeaderLabels(headers);
     ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
+    std::ofstream ofs("out.txt");
 
     for (int i = 0; i < jsonArray.size(); ++i) {
         QJsonObject obj = jsonArray[i].toObject()["queryLeftNewDTO"].toObject();
