@@ -2,7 +2,7 @@
 #define USERTICKET_H
 
 #include <QMainWindow>
-#include"ui_AddTicket.h"
+#include"ui_Ticket.h"
 class UserTicket : public QMainWindow
 {
     Q_OBJECT

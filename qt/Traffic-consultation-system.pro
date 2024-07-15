@@ -16,7 +16,6 @@ SOURCES += \
     login.cpp \
     staffhomepage.cpp \
     staffmodify.cpp \
-    ticket.cpp \
     userhomepage.cpp \
     usermainpage.cpp \
     userticket.cpp \
@@ -29,26 +28,21 @@ HEADERS += \
     login.h \
     staffhomepage.h \
     staffmodify.h \
-    ticket.h \
     userhomepage.h \
     usermainpage.h \
     userticket.h \
     crawler_widget.h
 
 FORMS += \
-    AddTicket.ui \
     AddTickets.ui \
     HomePage.ui \
     SatffModify.ui \
     StaffHomePage.ui \
+    Ticket.ui \
     UserHomePage.ui \
     UserMainPage.ui \
     login.ui \
-<<<<<<< HEAD:Traffic-consultation-system/Traffic-consultation-system.pro
-    ticket.ui
-=======
     crawler_widget.ui
->>>>>>> 8103a4f34cd2a124247b2247508311511870aae7:qt/Traffic-consultation-system.pro
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
