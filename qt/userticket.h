@@ -1,8 +1,8 @@
 #ifndef USERTICKET_H
 #define USERTICKET_H
-
+#include<ticket.h>
 #include <QMainWindow>
-#include"ui_Ticket.h"
+#include"ui_SearchTicket.h"
 class UserTicket : public QMainWindow
 {
     Q_OBJECT

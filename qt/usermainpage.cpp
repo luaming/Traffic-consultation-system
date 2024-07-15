@@ -1,12 +1,24 @@
 #include "usermainpage.h"
-#include"homepage.h"
+//#include"homepage.h"
 extern ALGraph*algraph;
-
 UserMainPage::UserMainPage(QWidget *parent)
     : QMainWindow{parent},ui(new Ui::UserMainPage)
 {
+
     ui->setupUi(this);
-    //ui->pushButton->setStyleSheet("QPushButton:pressed { background-color: green; }");
+   QHBoxLayout*layout=new QHBoxLayout();
+    //总用时总花费
+   //ui->summary->setText(QString("总用时：%1时%2分        总花费：%3元").arg().arg().arg());
+   //添加车票begin
+
+    for(int i=0;i<4;i++){
+        Ticket*t=new Ticket();
+        layout->addWidget(t);
+    }//此处添加
+
+    //添加车票end
+    //可以先把票都存入vector arr中再将上面的for循环改为for（auto r:arr)
+    ui->scrollAreaWidgetContents->setLayout(layout);
 
 }
 
@@ -43,4 +55,6 @@ void UserMainPage::on_pushButton_clicked()
     }
     else{}
 }
+
+
 

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include"ui_SatffModify.h"
+#include"ticket.h"
 class CrawlerWidget;
 class StaffModify : public QMainWindow
 {
