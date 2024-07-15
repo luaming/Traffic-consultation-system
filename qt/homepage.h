@@ -5,6 +5,8 @@
 #include"userhomepage.h"
 #include <QMainWindow>
 #include"ui_HomePage.h"
+
+#include"algraph.h"
 class HomePage : public QMainWindow
 {
     Q_OBJECT
@@ -13,6 +15,7 @@ public:
     Ui::HomePage*ui;
     LogIn*login;
     UserHomePage*UHP;
+
 signals:
 private slots:
 

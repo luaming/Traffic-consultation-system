@@ -1,5 +1,6 @@
 #include "userhomepage.h"
-
+#include"homepage.h"
+extern ALGraph*algraph;
 UserHomePage::UserHomePage(QWidget *parent)
     : QMainWindow{parent},ui(new Ui::UserHomePage)
 {
@@ -22,6 +23,10 @@ void UserHomePage::on_trainbtn_clicked()
     this->close();
     ticketresults->show();
     connect(ticketresults,&UserTicket::UHP,this,[=](){ticketresults->close();this->show();});
+    string startcity=this->ui->lineEdit_14->text().toStdString();
+    string endcity=this->ui->lineEdit_15->text().toStdString();
+    string today=this->ui->lineEdit_16->text().toStdString();
+    algraph->printPathsByCity(startcity,endcity);
 }
 
 
@@ -31,6 +36,10 @@ void UserHomePage::on_planebtn_clicked()
     this->close();
     ticketresults->show();
     connect(ticketresults,&UserTicket::UHP,this,[=](){ticketresults->close();this->show();});
+    string startcity=this->ui->lineEdit_14->text().toStdString();
+    string endcity=this->ui->lineEdit_15->text().toStdString();
+    string today=this->ui->lineEdit_16->text().toStdString();
+    algraph->printPathsByCity(startcity,endcity);
 }
 
 
@@ -40,5 +49,9 @@ void UserHomePage::on_carbtn_clicked()
     this->close();
     ticketresults->show();
     connect(ticketresults,&UserTicket::UHP,this,[=](){ticketresults->close();this->show();});
+    string startcity=this->ui->lineEdit_14->text().toStdString();
+    string endcity=this->ui->lineEdit_15->text().toStdString();
+    string today=this->ui->lineEdit_16->text().toStdString();
+    algraph->printPathsByCity(startcity,endcity);
 }
 

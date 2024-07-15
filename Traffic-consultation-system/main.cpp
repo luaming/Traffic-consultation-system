@@ -1,7 +1,11 @@
+<<<<<<< HEAD
+#include "homepage.h"
+=======
 #include<iostream>
 #include<string>
 #include"ALGraph.h"
 using namespace std;
+>>>>>>> 0ac5d940be8efb94d8930f8c900178af3cd65ee2
 
 //初始密码为什么要保存在这里？？？
 string Account = "admin";

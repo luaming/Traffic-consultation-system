@@ -8,9 +8,6 @@ HomePage::HomePage(QWidget *parent)
     login=new LogIn;
 }
 
-
-
-
 void HomePage::on_userbtn_clicked()
 {
 

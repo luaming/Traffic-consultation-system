@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     addticket.cpp \
+    algraph.cpp \
     homepage.cpp \
     main.cpp \
     login.cpp \
@@ -21,6 +22,7 @@ SOURCES += \
     crawler_widget.cpp
 
 HEADERS += \
+    ALGraph.h \
     addticket.h \
     homepage.h \
     login.h \
@@ -49,3 +51,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     res.qrc
+
+DISTFILES += \
+    D:/办事/代码/transtation/transtation/Flight.txt \
+    D:/办事/代码/transtation/transtation/FlightCity.txt

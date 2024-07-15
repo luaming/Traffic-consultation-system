@@ -14,6 +14,7 @@ signals:
     void UHP();
 private slots:
     void on_homebtn_clicked(bool checked);
+    void on_pushButton_clicked();
 };
 
 #endif // USERMAINPAGE_H

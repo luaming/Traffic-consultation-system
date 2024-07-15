@@ -1207,8 +1207,8 @@ QPushButton:pressed{  background-color: #5172c4;}</string>
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>749</width>
-        <height>309</height>
+        <width>747</width>
+        <height>316</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">

@@ -8,6 +8,8 @@
 #include <QMessageBox>
 #include <QHeaderView>
 #include <QDate>
+#include<fstream>
+using namespace std;
 
 CrawlerWidget::CrawlerWidget(QWidget *parent)
     : QDialog(parent)
@@ -50,7 +52,7 @@ void CrawlerWidget::on_fetchButton_clicked() {
         return;
     }
 
-    // ÑéÖ¤ÈÕÆÚ¸ñÊ½
+    // éªŒè¯æ—¥æœŸæ ¼å¼
     QDate formattedDate = QDate::fromString(date, "yyyy-MM-dd");
     if (!formattedDate.isValid()) {
         QMessageBox::warning(this, "Error", "Invalid date format. Please use yyyy-MM-dd.");
@@ -81,10 +83,12 @@ void CrawlerWidget::onReplyFinished(QNetworkReply *reply) {
 
     ui->tableWidget->setRowCount(jsonArray.size());
     ui->tableWidget->setColumnCount(20);
-    QStringList headers = {"³µ´Î", "ÆðµãÕ¾", "ÆðµãÕ¾´úºÅ", "ÖÕµãÕ¾", "ÖÕµãÕ¾´úºÅ", "³ö·¢Õ¾", "³ö·¢Õ¾´úºÅ", "µ½Õ¾", "µ½Õ¾´úºÅ",
-                           "¿ªÊ¼Ê±", "½áÊøÊ±", "³ÖÐøÊ±¼ä", "ÉÌÎñ×ù", "Ò»µÈ×ù", "¶þµÈ×ù", "¸ß¼¶ÈíÎÔ", "ÈíÎÔ", "Ó²ÎÔ", "Èí×ù", "Ó²×ù", "Õ¾Æ±"};
+    QStringList headers = {"è½¦æ¬¡", "èµ·ç‚¹ç«™", "èµ·ç‚¹ç«™ä»£å·", "ç»ˆç‚¹ç«™", "ç»ˆç‚¹ç«™ä»£å·", "å‡ºå‘ç«™", "å‡ºå‘ç«™ä»£å·", "åˆ°ç«™", "åˆ°ç«™ä»£å·",
+                           "å¼€å§‹æ—¶", "ç»“æŸæ—¶", "æŒç»­æ—¶é—´", "å•†åŠ¡åº§", "ä¸€ç­‰åº§", "äºŒç­‰åº§", "é«˜çº§è½¯å§", "è½¯å§", "ç¡¬å§", "è½¯åº§", "ç¡¬åº§", "ç«™ç¥¨"};
     ui->tableWidget->setHorizontalHeaderLabels(headers);
     ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
+    std::ofstream ofs("out.txt");
 
     for (int i = 0; i < jsonArray.size(); ++i) {
         QJsonObject obj = jsonArray[i].toObject()["queryLeftNewDTO"].toObject();

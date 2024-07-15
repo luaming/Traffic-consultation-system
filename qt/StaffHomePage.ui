@@ -786,7 +786,6 @@ background-color: rgb(255, 255, 255);
       <font>
        <family>微软雅黑</family>
        <pointsize>25</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -810,7 +809,6 @@ background-color: rgb(255, 255, 255);
       <font>
        <family>微软雅黑</family>
        <pointsize>25</pointsize>
-       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
