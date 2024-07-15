@@ -15,6 +15,7 @@ SOURCES += \
     login.cpp \
     staffhomepage.cpp \
     staffmodify.cpp \
+    ticket.cpp \
     userhomepage.cpp \
     usermainpage.cpp \
     userticket.cpp
@@ -25,19 +26,21 @@ HEADERS += \
     login.h \
     staffhomepage.h \
     staffmodify.h \
+    ticket.h \
     userhomepage.h \
     usermainpage.h \
     userticket.h
 
 FORMS += \
+    AddTicket.ui \
     AddTickets.ui \
     HomePage.ui \
     SatffModify.ui \
     StaffHomePage.ui \
-    Ticket.ui \
     UserHomePage.ui \
     UserMainPage.ui \
-    login.ui
+    login.ui \
+    ticket.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
