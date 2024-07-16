@@ -1,38 +1,38 @@
 #include "ticket.h"
 #include "ui_ticket.h"
 
-Ticket::Ticket(QWidget *parent)
+Ticket::Ticket(QWidget *parent,LineNode ll)
     : QWidget(parent)
     , ui(new Ui::Ticket)
 {
 
     ui->setupUi(this);
-    // ui->stime->setText(QString("%1:%2").arg(t.start_time.hour).arg(t.start_time.minute));
-    // ui->etime->setText(QString("%1:%2").arg(t.end_time.hour).arg(t.end_time.minute));
-    // ui->tool->setText(QString::fromStdString(t.amount));
-    // ui->splace->setText(QString::fromStdString(t.start_city_name));
-    // ui->eplace->setText(QString::fromStdString(t.end_city_name));
-    // ui->cost->setText(QString::number(t.spend_money));
-    // ui->time->setText(QString("%1时%2分").arg(t.spend_time.hour).arg(t.spend_time.minute));
-    // ui->arrive->setText(QString("预计到达时间：%1日%2时%3分").arg(t.end_time.day).arg(t.end_time.hour).arg(t.end_time.minute));
-    // QString tool="/";
-    // switch (t.kind) {
-    // case 1:
-    //     tool+="plane.png";
-    //     break;
-    // case 2:
-    //     tool+="train.png";
-    //     break;
-    // case 3:
-    //     tool+="car.png";
-    //     break;
-    // default:
-    //     break;
-    // }
-    // if(t.kind<=3){
-    // QPixmap pix(tool);
-    // ui->img->setPixmap(pix);
-    // ui->img->setScaledContents(true); }
+     ui->stime->setText(QString("%1:%2").arg(ll.start_time.hour).arg(ll.start_time.minute));
+     ui->etime->setText(QString("%1:%2").arg(ll.end_time.hour).arg(ll.end_time.minute));
+     ui->tool->setText(QString::fromStdString(ll.amount));
+     ui->splace->setText(QString::fromStdString(ll.start_city_name));
+     ui->eplace->setText(QString::fromStdString(ll.end_city_name));
+     ui->cost->setText(QString::number(ll.spend_money));
+     ui->time->setText(QString("%1时%2分").arg(ll.spend_time.hour).arg(ll.spend_time.minute));
+     ui->arrive->setText(QString("预计到达时间：%1日%2时%3分").arg(ll.end_time.day).arg(ll.end_time.hour).arg(ll.end_time.minute));
+     QString tool="/";
+     switch (ll.kind) {
+     case 1:
+         tool+="plane.png";
+         break;
+     case 2:
+         tool+="train.png";
+         break;
+     case 3:
+         tool+="car.png";
+         break;
+     default:
+         break;
+     }
+     if(ll.kind<=3){
+     QPixmap pix(tool);
+     ui->img->setPixmap(pix);
+     ui->img->setScaledContents(true); }
 
 }
 

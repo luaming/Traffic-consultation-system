@@ -1,21 +1,20 @@
 #include "staffmodify.h"
 #include "crawler_widget.h"
+#include"homepage.h"
+extern ALGraph*algraph;
 StaffModify::StaffModify(QWidget *parent)
     : QMainWindow{parent},ui(new Ui::StaffModify)
 {
     ui->setupUi(this);
     connect(ui->stfbtnCrawler, &QPushButton::clicked, this, &StaffModify::on_stfbtnCrawler_clicked);
     m_pCrawlerWidget = new CrawlerWidget(this);
-    QGridLayout*layout=new QGridLayout();
-    //添加车票begin
 
-    for(int i=0;i<4;i++){
-        Ticket*t=new Ticket();
+    QGridLayout*layout=new QGridLayout();
+    std::vector<LineNode>arr=algraph->showAllLine();
+    for(auto r:arr){
+        Ticket*t=new Ticket(this,r);
         layout->addWidget(t);
     }//此处添加
-
-    //添加车票end
-    //可以先把票都存入vector arr中再将上面的for循环改为for（auto r:arr)
     ui->scrollAreaWidgetContents->setLayout(layout);
 }
 

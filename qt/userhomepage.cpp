@@ -26,7 +26,10 @@ void UserHomePage::on_trainbtn_clicked()
     string startcity=this->ui->lineEdit_14->text().toStdString();
     string endcity=this->ui->lineEdit_15->text().toStdString();
     string today=this->ui->lineEdit_16->text().toStdString();
+    algraph->mkind=2;
     algraph->printPathsByCity(startcity,endcity);
+    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
+    ticketresults->creattickts(arr);
 }
 
 
@@ -36,10 +39,13 @@ void UserHomePage::on_planebtn_clicked()
     this->close();
     ticketresults->show();
     connect(ticketresults,&UserTicket::UHP,this,[=](){ticketresults->close();this->show();});
-    string startcity=this->ui->lineEdit_14->text().toStdString();
-    string endcity=this->ui->lineEdit_15->text().toStdString();
-    string today=this->ui->lineEdit_16->text().toStdString();
+    string startcity=this->ui->lineEdit_11->text().toStdString();
+    string endcity=this->ui->lineEdit_12->text().toStdString();
+    string today=this->ui->lineEdit_13->text().toStdString();
+    algraph->mkind=1;
     algraph->printPathsByCity(startcity,endcity);
+    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
+    ticketresults->creattickts(arr);
 }
 
 
@@ -49,9 +55,12 @@ void UserHomePage::on_carbtn_clicked()
     this->close();
     ticketresults->show();
     connect(ticketresults,&UserTicket::UHP,this,[=](){ticketresults->close();this->show();});
-    string startcity=this->ui->lineEdit_14->text().toStdString();
-    string endcity=this->ui->lineEdit_15->text().toStdString();
-    string today=this->ui->lineEdit_16->text().toStdString();
+    string startcity=this->ui->lineEdit_7->text().toStdString();
+    string endcity=this->ui->lineEdit_8->text().toStdString();
+    string today=this->ui->lineEdit_9->text().toStdString();
+    algraph->mkind=3;
     algraph->printPathsByCity(startcity,endcity);
+    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
+    ticketresults->creattickts(arr);
 }
 

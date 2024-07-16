@@ -49,7 +49,9 @@ struct Time {
 QDebug operator<<(QDebug out, const Time& time) ;
 
 struct LineNode {  // 线路信息，作为边表的元素
-
+    LineNode(): start_city_name(""), end_city_name(""),
+        start_time(Time(0,0,0)), end_time(Time(0,0,0)), spend_time(Time(0,0,0)),
+            spend_money(0), amount(""),kind(0),show_start(""),show_end("") {}
     LineNode(const std::string scn, const std::string ecn, const Time st, const Time et, const Time spend_t,
              const float spend_m, const std::string amt,int k,std::string s_s,std::string s_e)
         : start_city_name(scn), end_city_name(ecn),
@@ -96,7 +98,7 @@ public:
     int mkind;
     bool together;
     DayTime today;               //今日时间，以其为基准利用爬虫爬取数据
-    explicit ALGraph(QObject *parent = nullptr);                    
+    explicit ALGraph(QObject *parent = nullptr);
     void changeType(); //更改单一或混合方式选择
     void getarrivaltime(vector<LineNode>&path);  //输出依据实现一套方案的到达时刻
     bool ifCityExist(const std::string& city_name);  // 查询城市是否存在
@@ -114,11 +116,11 @@ public:
     //void updateFile(const char FileName[MAXFILESIZE], const std::string type);  // 修改后更新文件
 
     void showAllCity();  // 输出所有城市
-    void showAllLine();  // 输出所有线路
+    std::vector<LineNode> showAllLine();  // 输出所有线路
 
     //输出特定要求下的直达路径
     //没有在主函数中给出选项，四种决策方式都在这一个函数里，未来可以做是否换乘那个复选框的槽函数
-    void printstraightPath(const std::string sc, const std::string ec);
+    std::vector<LineNode> printstraightPath(const std::string sc, const std::string ec,int select);
 
     // 返回混合方式从起点城市到终点城市的所有路径
     std::vector<std::vector<LineNode>> getPathsByCity(const std::string& sc, const std::string& ec);

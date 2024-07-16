@@ -5,15 +5,16 @@ AddTicket::AddTicket(QString tool,QWidget *parent)
 {
     ui->setupUi(this);
     QGridLayout*layout=new QGridLayout();
-    //添加车票begin
+    ui->scrollAreaWidgetContents->setLayout(layout);
+}
 
-    for(int i=0;i<4;i++){
-        Ticket*t=new Ticket();
+void AddTicket::creattickets(vector<LineNode> arr)
+{
+    QGridLayout*layout=new QGridLayout();
+    for(auto r:arr){
+        Ticket*t=new Ticket(this,r);
         layout->addWidget(t);
     }//此处添加
-
-    //添加车票end
-    //可以先把票都存入vector arr中再将上面的for循环改为for（auto r:arr)
     ui->scrollAreaWidgetContents->setLayout(layout);
 }
 
