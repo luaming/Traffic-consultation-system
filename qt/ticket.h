@@ -3,6 +3,7 @@
 #include<QGridLayout>
 #include<QVBoxLayout>
 #include<QHBoxLayout>
+#include<QScrollArea>
 #include <QWidget>
 #include<QDebug>
 #include "algraph.h"

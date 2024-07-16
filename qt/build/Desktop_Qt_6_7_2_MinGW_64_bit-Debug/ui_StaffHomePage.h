@@ -330,7 +330,7 @@ public:
 
         retranslateUi(StaffHomePage);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(StaffHomePage);
