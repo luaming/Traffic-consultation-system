@@ -10,6 +10,7 @@ class AddTicket : public QMainWindow
 public:
     explicit AddTicket(QString tool,QWidget *parent = nullptr);
     Ui::AllTickets*ui;
+    void creattickets(vector<LineNode>arr);
 
 signals:
     void SHP();
