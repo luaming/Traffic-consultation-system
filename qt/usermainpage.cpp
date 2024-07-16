@@ -4,7 +4,6 @@ extern ALGraph*algraph;
 UserMainPage::UserMainPage(QWidget *parent)
     : QMainWindow{parent},ui(new Ui::UserMainPage)
 {
-
     ui->setupUi(this);
 }
 
@@ -19,11 +18,12 @@ void UserMainPage::on_pushButton_clicked()
     string sc=ui->lineEdit->text().toStdString();
     string ec=ui->lineEdit_2->text().toStdString();
     if(ui->radioButton_11->isChecked()){
-        algraph->printLeastMoneyPath(sc,ec);
-
+        vector<LineNode>arr=algraph->printLeastMoneyPath(sc,ec);
+        creattickts(arr);
     }
     else if(ui->radioButton_12->isChecked()){
-        algraph->printLeastTimePath(sc,ec);
+        vector<LineNode>arr=algraph->printLeastTimePath(sc,ec);
+        creattickts(arr);
     }
     else{}
 }

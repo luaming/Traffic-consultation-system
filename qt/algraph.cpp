@@ -415,19 +415,22 @@ void ALGraph::delCity(const string& city_name) {
 void ALGraph::delLine(const string& sc, const string& ec, const string& amt) {
 
     if (!ifCityExist(sc)) {
-        cout << sc << "不存在！请重新输入正确的城市名或者新建该城市！" << endl;
+        qDebug() << QString::fromStdString(sc) << "不存在！请重新输入正确的城市名或者新建该城市！";
         return;
     }
     if (!ifCityExist(ec)) {
-        cout << ec << "不存在！请重新输入正确的城市名或者新建该城市！" << endl;
+        qDebug() << QString::fromStdString(ec) << "不存在！请重新输入正确的城市名或者新建该城市！" ;
         return;
     }
     auto line_node_vec = getLineNode(sc, ec, amt);
     if (line_node_vec.size() == 0) {
-        cout << "从" << sc << "到" << ec << "，班次号为" << amt << "的线路并不存在，请重新输入！" << endl;
+        qDebug() << "从" << QString::fromStdString(sc)
+             << "到" << QString::fromStdString(ec)
+             << "，班次号为" << QString::fromStdString(amt) << "的线路并不存在，请重新输入！";
     }
 
-    cout << "正在删除从" << sc << "到" << ec << "，班次号为" << amt << "的线路！" << endl;
+    qDebug() << "正在删除从" << QString::fromStdString(sc) << "到" << QString::fromStdString(ec)
+             << "，班次号为" << QString::fromStdString(amt) << "的线路！" ;
 
     auto it = m.find(Vnode(sc));
     for (auto beg = (*it).second.begin(); beg != (*it).second.end(); ++beg) {
@@ -438,7 +441,9 @@ void ALGraph::delLine(const string& sc, const string& ec, const string& amt) {
         }
     }
 
-    cout << "已删除从" << sc << "到" << ec << "，班次号为" << amt << "的线路！" << endl;
+    line_num--;
+    qDebug() << "已删除从" << QString::fromStdString(sc) << "到"
+             << QString::fromStdString(ec) << "，班次号为" << QString::fromStdString(amt) << "的线路！";
 
 }//delLine
 
@@ -473,7 +478,6 @@ std::vector<LineNode> ALGraph::showAllLine() {
     auto it = m.cbegin();
     while (it != m.cend()) {
         for (auto beg = (*it).second.cbegin(); beg != (*it).second.cend(); ++beg) {
-
             res.push_back((*beg));
         }
         ++it;
@@ -751,28 +755,28 @@ void ALGraph::printLeastTransferPath(const std::string& sc, const std::string& e
 }
 
 // 输出从起点城市到终点城市，总时间最短的线路
-void ALGraph::printLeastTimePath(const std::string& sc, const std::string& ec) {
+std::vector<LineNode> ALGraph::printLeastTimePath(const std::string& sc, const std::string& ec) {
 
     if ((!ifCityExist(sc)) && (!ifCityExist(ec))) {
         qDebug() << "系统中未存在" << QString::fromStdString(sc) << "和" << QString::fromStdString(ec) << "这两座城市，请先添加这两座城市！";
-        return;
+        return{};
     }
 
     if (!ifCityExist(sc)) {
         qDebug() << "系统中未存在" << QString::fromStdString(sc) << "这座城市，请先添加该城市！";
-        return;
+        return{};
     }
 
     if (!ifCityExist(ec)) {
         qDebug() << "系统中未存在" << QString::fromStdString(ec) << "这座城市，请先添加该城市！";
-        return;
+        return{};
     }
     auto path_vec = getPathsByCity(sc, ec);
 
     if (path_vec.size() == 0) {
         qDebug() << "从" << QString::fromStdString(sc) << "到"
                  << QString::fromStdString(ec) << "没有可以通行的路径！";
-        return;
+        return{};
     }
 
     int min_time_path_idx = -1;
@@ -808,33 +812,31 @@ void ALGraph::printLeastTimePath(const std::string& sc, const std::string& ec) {
     }
 
     qDebug() << "从" << QString::fromStdString(sc) << "到" << QString::fromStdString(ec) << "的耗时最少的路径如下：";
-    for (auto line : path_vec.at(min_time_path_idx)) {
-        qDebug() << line;
-    }
+
     Time min_time_obj = getTimeByMinute(min_time_sum);
     qDebug() << "从" << QString::fromStdString(sc) << "到" << QString::fromStdString(ec) << "的最少耗时为："
              << min_time_obj.day << "天"
              << min_time_obj.hour << "小时" << min_time_obj.minute << "分钟！" ;
-
+    return path_vec.at(min_time_path_idx);
 }
 
 // 输出某个城市到其他各城市的花费最少的路线
-void ALGraph::printLeastMoneyPath(const std::string& sc, const std::string& ec) {
+std::vector<LineNode> ALGraph::printLeastMoneyPath(const std::string& sc, const std::string& ec) {
 
     if ((!ifCityExist(sc)) && (!ifCityExist(ec))) {
         qDebug() << "系统中未存在" << QString::fromStdString(sc)
                  << "和" << QString::fromStdString(ec) << "这两座城市，请先添加这两座城市！" ;
-        return;
+        return{};
     }
 
     if (!ifCityExist(sc)) {
         qDebug() << "系统中未存在" << QString::fromStdString(sc) << "这座城市，请先添加该城市！" ;
-        return;
+        return{};
     }
 
     if (!ifCityExist(ec)) {
         qDebug() << "系统中未存在" << QString::fromStdString(ec) << "这座城市，请先添加该城市！" ;
-        return;
+        return{};
     }
 
     struct cmp_pair_ec_and_amount_by_ec {
@@ -932,6 +934,7 @@ void ALGraph::printLeastMoneyPath(const std::string& sc, const std::string& ec) 
 
         qDebug()<< "系统中没有路径可以从" << QString::fromStdString(sc)
                  << "到达" << QString::fromStdString(ec) << "！" ;
+        return{};
     }
     else {
         // 提取 parent 中存储的路径，存入最终的结果 result
@@ -945,14 +948,10 @@ void ALGraph::printLeastMoneyPath(const std::string& sc, const std::string& ec) 
         std::reverse(result.begin(), result.end());  // 由于 parent 中线路是反向存储，要将 result 中的线路反转
         qDebug() << "从" << QString::fromStdString(sc) << "到" << QString::fromStdString(ec) << "的花费最少的路径如下：" ;
         //cout << "出发城市|到达城市|班次名|出发时间|到达时间||||用时|||票价" << endl;
-        for (auto line : result) {
 
-            qDebug() << line; //已重载过linenode的<<符号便于输出
-
-        }
         qDebug() << "从" << QString::fromStdString(sc) << "到"
                  << QString::fromStdString(ec) << "的最少花费" << distanced.at(ec) << "元！" ;
-
+        return result;
     }
 
 }

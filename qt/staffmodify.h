@@ -11,6 +11,7 @@ class StaffModify : public QMainWindow
 public:
     explicit StaffModify(QWidget *parent = nullptr);
     virtual~StaffModify();
+    void creattickts(vector<LineNode>&arr);
     Ui::StaffModify*ui;
     CrawlerWidget* m_pCrawlerWidget;
 signals:
@@ -18,6 +19,7 @@ signals:
 private slots:
     void on_homebtn_clicked();
     void on_stfbtnCrawler_clicked();
+    void on_stfbtn_clicked();
 };
 
 #endif // STAFFMODIFY_H

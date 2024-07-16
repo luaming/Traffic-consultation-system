@@ -27,9 +27,10 @@ void UserHomePage::on_trainbtn_clicked()
     string endcity=this->ui->lineEdit_15->text().toStdString();
     string today=this->ui->lineEdit_16->text().toStdString();
     algraph->mkind=2;
-    algraph->printPathsByCity(startcity,endcity);
-    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
+    std::vector<vector<LineNode>> arz=algraph->getPathsByCity(startcity,endcity);
+    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,2);
     ticketresults->creattickts(arr);
+    ticketresults->creatzhongzhuantickts(arz);
 }
 
 
@@ -46,6 +47,8 @@ void UserHomePage::on_planebtn_clicked()
     algraph->printPathsByCity(startcity,endcity);
     std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
     ticketresults->creattickts(arr);
+    std::vector<vector<LineNode>> arz=algraph->getPathsByCity(startcity,endcity);
+    ticketresults->creatzhongzhuantickts(arz);
 }
 
 
@@ -60,7 +63,9 @@ void UserHomePage::on_carbtn_clicked()
     string today=this->ui->lineEdit_9->text().toStdString();
     algraph->mkind=3;
     algraph->printPathsByCity(startcity,endcity);
-    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
+    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,3);
     ticketresults->creattickts(arr);
+    std::vector<vector<LineNode>> arz=algraph->getPathsByCity(startcity,endcity);
+    ticketresults->creatzhongzhuantickts(arz);
 }
 

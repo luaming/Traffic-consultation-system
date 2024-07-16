@@ -10,6 +10,7 @@ class UserTicket : public QMainWindow
 public:
     explicit UserTicket(QString tool,QWidget *parent = nullptr);
     void creattickts(vector<LineNode>&arr);
+    void creatzhongzhuantickts(vector<vector<LineNode>>&az);
     Ui::Ticket*ui;
 signals:void UHP();
 private slots:
