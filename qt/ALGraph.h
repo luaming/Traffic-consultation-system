@@ -132,10 +132,10 @@ public:
     void printLeastTransferPath(const std::string& sc, const std::string& ec);
 
     // 输出混合方式从起点城市到终点城市，花费最小的线路
-    void printLeastMoneyPath(const std::string& sc, const std::string& ec);
+    std::vector<LineNode> printLeastMoneyPath(const std::string& sc, const std::string& ec);
 
     // 输出混合方式从起点城市到终点城市，总时间最短的线路
-    void printLeastTimePath(const std::string& sc, const std::string& ec);
+    std::vector<LineNode> printLeastTimePath(const std::string& sc, const std::string& ec);
 
     //依靠爬虫实现对路径两个城市之间路径的读取
     void addfrompachong(string sc,string ec);

@@ -17,6 +17,7 @@ class Ticket : public QWidget
 
 public:
     int choosed=0;//是否被选择
+    LineNode line;
     explicit Ticket(QWidget *parent = nullptr,LineNode ll=LineNode());
     ~Ticket();
 

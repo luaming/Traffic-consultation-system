@@ -14,6 +14,8 @@ void StaffHomePage::on_modifybtn_clicked()
    // this->hide();
     SM->show();
     connect(SM,&StaffModify::SHP,this,[=]{SM->close();this->show();});
+    std::vector<LineNode>arr=algraph->showAllLine();
+    SM->creattickts(arr);
 }
 
 void StaffHomePage::on_trainbtn_clicked()
@@ -26,8 +28,7 @@ void StaffHomePage::on_trainbtn_clicked()
     string startcity=this->ui->lineEdit_14->text().toStdString();
     string endcity=this->ui->lineEdit_15->text().toStdString();
     string today=this->ui->lineEdit_16->text().toStdString();
-    algraph->printPathsByCity(startcity,endcity);
-    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
+    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,2);
     ticketresults->creattickets(arr);
 }
 
@@ -42,7 +43,6 @@ void StaffHomePage::on_planebtn_clicked()
     string startcity=this->ui->lineEdit_11->text().toStdString();
     string endcity=this->ui->lineEdit_12->text().toStdString();
     string today=this->ui->lineEdit_13->text().toStdString();
-    algraph->printPathsByCity(startcity,endcity);
     std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
     ticketresults->creattickets(arr);
 }
@@ -58,7 +58,6 @@ void StaffHomePage::on_carbtn_clicked()
     string startcity=this->ui->lineEdit_7->text().toStdString();
     string endcity=this->ui->lineEdit_8->text().toStdString();
     string today=this->ui->lineEdit_9->text().toStdString();
-    algraph->printPathsByCity(startcity,endcity);
-    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
+    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,3);
     ticketresults->creattickets(arr);
 }
