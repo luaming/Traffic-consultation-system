@@ -26,7 +26,6 @@ public:
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
     QPushButton *backbtn;
-    QPushButton *stfbtn_2;
     QFrame *line;
 
     void setupUi(QMainWindow *AllTickets)
@@ -68,22 +67,6 @@ public:
 "QPushButton:pressed{  background-color: #bebebe;}\n"
 ""));
         backbtn->setIconSize(QSize(20, 20));
-        stfbtn_2 = new QPushButton(centralwidget);
-        stfbtn_2->setObjectName("stfbtn_2");
-        stfbtn_2->setGeometry(QRect(650, 420, 111, 51));
-        sizePolicy.setHeightForWidth(stfbtn_2->sizePolicy().hasHeightForWidth());
-        stfbtn_2->setSizePolicy(sizePolicy);
-        stfbtn_2->setMinimumSize(QSize(0, 9));
-        stfbtn_2->setFont(font);
-        stfbtn_2->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        stfbtn_2->setLayoutDirection(Qt::LeftToRight);
-        stfbtn_2->setStyleSheet(QString::fromUtf8("*{\n"
-"background-color:#d9d9d9;\n"
-"border-radius:20px;\n"
-"}\n"
-"QPushButton:pressed{  background-color: #bebebe;}\n"
-""));
-        stfbtn_2->setIconSize(QSize(20, 20));
         line = new QFrame(centralwidget);
         line->setObjectName("line");
         line->setGeometry(QRect(0, 400, 800, 3));
@@ -100,7 +83,6 @@ public:
     {
         AllTickets->setWindowTitle(QCoreApplication::translate("AllTickets", "MainWindow", nullptr));
         backbtn->setText(QCoreApplication::translate("AllTickets", "\350\277\224\345\233\236", nullptr));
-        stfbtn_2->setText(QCoreApplication::translate("AllTickets", "\346\267\273\345\212\240", nullptr));
     } // retranslateUi
 
 };
