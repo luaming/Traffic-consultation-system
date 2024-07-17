@@ -13,7 +13,6 @@
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFrame>
-#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -37,12 +36,10 @@ public:
     QPushButton *pushButton_3;
     QFrame *line;
     QFrame *line_2;
-    QScrollArea *scrollArea;
-    QWidget *scrollAreaWidgetContents;
-    QGridLayout *gridLayout;
-    QFrame *frame_13;
     QPushButton *stfbtn;
     QPushButton *stfbtnCrawler;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
 
     void setupUi(QMainWindow *StaffModify)
     {
@@ -124,38 +121,14 @@ public:
         line_2->setStyleSheet(QString::fromUtf8("background-color:rgb(190,190,190);"));
         line_2->setFrameShape(QFrame::Shape::VLine);
         line_2->setFrameShadow(QFrame::Shadow::Sunken);
-        scrollArea = new QScrollArea(centralwidget);
-        scrollArea->setObjectName("scrollArea");
-        scrollArea->setGeometry(QRect(40, 70, 721, 321));
-        scrollArea->setMinimumSize(QSize(721, 321));
-        scrollArea->setWidgetResizable(true);
-        scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName("scrollAreaWidgetContents");
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 719, 319));
-        gridLayout = new QGridLayout(scrollAreaWidgetContents);
-        gridLayout->setObjectName("gridLayout");
-        frame_13 = new QFrame(scrollAreaWidgetContents);
-        frame_13->setObjectName("frame_13");
-        QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(frame_13->sizePolicy().hasHeightForWidth());
-        frame_13->setSizePolicy(sizePolicy);
-        frame_13->setMinimumSize(QSize(351, 91));
-        frame_13->setFrameShape(QFrame::StyledPanel);
-        frame_13->setFrameShadow(QFrame::Raised);
-
-        gridLayout->addWidget(frame_13, 0, 0, 1, 1);
-
-        scrollArea->setWidget(scrollAreaWidgetContents);
         stfbtn = new QPushButton(centralwidget);
         stfbtn->setObjectName("stfbtn");
         stfbtn->setGeometry(QRect(550, 10, 111, 41));
-        QSizePolicy sizePolicy1(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(stfbtn->sizePolicy().hasHeightForWidth());
-        stfbtn->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(stfbtn->sizePolicy().hasHeightForWidth());
+        stfbtn->setSizePolicy(sizePolicy);
         stfbtn->setMinimumSize(QSize(0, 9));
         QFont font3;
         font3.setFamilies({QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221")});
@@ -173,8 +146,8 @@ public:
         stfbtnCrawler = new QPushButton(centralwidget);
         stfbtnCrawler->setObjectName("stfbtnCrawler");
         stfbtnCrawler->setGeometry(QRect(680, 10, 111, 41));
-        sizePolicy1.setHeightForWidth(stfbtnCrawler->sizePolicy().hasHeightForWidth());
-        stfbtnCrawler->setSizePolicy(sizePolicy1);
+        sizePolicy.setHeightForWidth(stfbtnCrawler->sizePolicy().hasHeightForWidth());
+        stfbtnCrawler->setSizePolicy(sizePolicy);
         stfbtnCrawler->setMinimumSize(QSize(0, 9));
         stfbtnCrawler->setFont(font3);
         stfbtnCrawler->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
@@ -186,6 +159,14 @@ public:
 "QPushButton:pressed{  background-color: #bebebe;}\n"
 ""));
         stfbtnCrawler->setIconSize(QSize(20, 20));
+        scrollArea = new QScrollArea(centralwidget);
+        scrollArea->setObjectName("scrollArea");
+        scrollArea->setGeometry(QRect(40, 70, 721, 321));
+        scrollArea->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName("scrollAreaWidgetContents");
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 719, 319));
+        scrollArea->setWidget(scrollAreaWidgetContents);
         StaffModify->setCentralWidget(centralwidget);
 
         retranslateUi(StaffModify);
