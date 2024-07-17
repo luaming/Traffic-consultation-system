@@ -16,17 +16,26 @@ class CrawlerWidget: public QDialog {
 public:
     CrawlerWidget(QWidget *parent = nullptr);
     ~CrawlerWidget();
+    void creattickesfromcrawler();
+    QString date;
+    QString fromStation;
+    QString toStation;
 
+signals:
+    void Back();
 private slots:
-    void on_fetchButton_clicked();
     void onReplyFinished(QNetworkReply*);
+
+    void on_backbtn_clicked();
+
+    void on_addbtn_clicked();
 
 private:
     Ui::MainWindow *ui;
     QNetworkAccessManager *manager;
     QTableWidget *table;
     void loadStationInfo();
-    QMap<QString, QString> stationMap; // 存储车站名称和代码的映射
+    QMap<QString, QString> stationMap; // 瀛樺偍杞︾珯鍚嶇О鍜屼唬鐮佺殑鏄犲皠
 };
 
 #endif // MAINWINDOW_H

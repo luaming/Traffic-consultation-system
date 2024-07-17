@@ -13,7 +13,7 @@
   <property name="minimumSize">
    <size>
     <width>351</width>
-    <height>31</height>
+    <height>91</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -76,7 +76,7 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>11</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -158,9 +158,9 @@
   <widget class="QLabel" name="img">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>289</x>
      <y>40</y>
-     <width>40</width>
+     <width>51</width>
      <height>41</height>
     </rect>
    </property>
@@ -295,14 +295,14 @@
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>20</y>
+     <y>22</y>
      <width>71</width>
      <height>16</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>11</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -361,11 +361,10 @@
     </size>
    </property>
   </widget>
+  <zorder>line</zorder>
   <zorder>background</zorder>
   <zorder>tool</zorder>
-  <zorder>time</zorder>
   <zorder>stime</zorder>
-  <zorder>line</zorder>
   <zorder>etime</zorder>
   <zorder>cost</zorder>
   <zorder>img</zorder>
@@ -374,6 +373,7 @@
   <zorder>splace</zorder>
   <zorder>eplace</zorder>
   <zorder>arrive</zorder>
+  <zorder>time</zorder>
  </widget>
  <resources/>
  <connections/>

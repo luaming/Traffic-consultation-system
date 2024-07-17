@@ -10,15 +10,12 @@ class StaffModify : public QMainWindow
     Q_OBJECT
 public:
     explicit StaffModify(QWidget *parent = nullptr);
-    virtual~StaffModify();
     void creattickts(vector<LineNode>&arr);
     Ui::StaffModify*ui;
-    CrawlerWidget* m_pCrawlerWidget;
 signals:
     void SHP();
 private slots:
     void on_homebtn_clicked();
-    void on_stfbtnCrawler_clicked();
     void on_stfbtn_clicked();
 };
 

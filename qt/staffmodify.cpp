@@ -6,13 +6,6 @@ StaffModify::StaffModify(QWidget *parent)
     : QMainWindow{parent},ui(new Ui::StaffModify)
 {
     ui->setupUi(this);
-    connect(ui->stfbtnCrawler, &QPushButton::clicked, this, &StaffModify::on_stfbtnCrawler_clicked);
-    m_pCrawlerWidget = new CrawlerWidget(this);
-}
-
-StaffModify::~StaffModify() {
-    delete m_pCrawlerWidget;
-    m_pCrawlerWidget = nullptr;
 }
 
 void StaffModify::creattickts(vector<LineNode> &arr)
@@ -21,20 +14,19 @@ void StaffModify::creattickts(vector<LineNode> &arr)
         delete ui->scrollAreaWidgetContents->layout();
     }
     QGridLayout*layout=new QGridLayout();
+    int i=-1;int j=0;
     for(auto r:arr){
+        i++;
         Ticket*t=new Ticket(this,r);
-        layout->addWidget(t);
+        layout->addWidget(t,j,i);
+
+        if(i==1){i=-1;j++;}
     }//此处添加
     ui->scrollAreaWidgetContents->setLayout(layout);
 }
 void StaffModify::on_homebtn_clicked()
 {
     SHP();
-}
-
-void StaffModify::on_stfbtnCrawler_clicked()
-{
-    m_pCrawlerWidget->setVisible(true);
 }
 
 void StaffModify::on_stfbtn_clicked()

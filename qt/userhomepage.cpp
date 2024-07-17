@@ -1,5 +1,6 @@
 #include "userhomepage.h"
-#include"homepage.h"
+#include"ALGraph.h"
+#include"sstream"
 extern ALGraph*algraph;
 UserHomePage::UserHomePage(QWidget *parent)
     : QMainWindow{parent},ui(new Ui::UserHomePage)
@@ -30,7 +31,12 @@ void UserHomePage::on_trainbtn_clicked()
     std::vector<vector<LineNode>> arz=algraph->getPathsByCity(startcity,endcity);
     std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,2);
     ticketresults->creattickts(arr);
-    ticketresults->creatzhongzhuantickts(arz);
+    stringstream ss;
+    char c;
+    int year,month,day;
+    ss<<today;
+    ss>>year>>c>>month>>c>>day;
+    ticketresults->creatzhongzhuantickts(arz,year,month,day);
 }
 
 
@@ -48,7 +54,12 @@ void UserHomePage::on_planebtn_clicked()
     std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
     ticketresults->creattickts(arr);
     std::vector<vector<LineNode>> arz=algraph->getPathsByCity(startcity,endcity);
-    ticketresults->creatzhongzhuantickts(arz);
+    stringstream ss;
+    char c;
+    int year,month,day;
+    ss<<today;
+    ss>>year>>c>>month>>c>>day;
+    ticketresults->creatzhongzhuantickts(arz,year,month,day);
 }
 
 
@@ -66,6 +77,11 @@ void UserHomePage::on_carbtn_clicked()
     std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,3);
     ticketresults->creattickts(arr);
     std::vector<vector<LineNode>> arz=algraph->getPathsByCity(startcity,endcity);
-    ticketresults->creatzhongzhuantickts(arz);
+    stringstream ss;
+    char c;
+    int year,month,day;
+    ss<<today;
+    ss>>year>>c>>month>>c>>day;
+    ticketresults->creatzhongzhuantickts(arz,year,month,day);
 }
 

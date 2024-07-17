@@ -20,14 +20,13 @@ public:
     LineNode line;
     explicit Ticket(QWidget *parent = nullptr,LineNode ll=LineNode());
     ~Ticket();
+    Ui::Ticket *ui;
 
+    void showarrival(QString arrival);
 
 private slots:
     void on_background_clicked();
 
-private:
-
-    Ui::Ticket *ui;
 };
 
 #endif // TICKET_H
