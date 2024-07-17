@@ -21,7 +21,7 @@ void UserTicket::creattickts(vector<LineNode> &arr)
 
 }
 
-void UserTicket::creatzhongzhuantickts(vector<vector<LineNode>>&az)
+void UserTicket::creatzhongzhuantickts(vector<vector<LineNode>>&az,int y,int m,int d)
 {
     ui->tabWidget->removeTab(1);
     ui->tabWidget->removeTab(0);
@@ -32,10 +32,19 @@ void UserTicket::creatzhongzhuantickts(vector<vector<LineNode>>&az)
         QWidget* contentWidget = new QWidget;
         QVBoxLayout* layout = new QVBoxLayout(contentWidget);
         vector<LineNode>vl=az[i];
+        ALGraph*a=new ALGraph;
+        QString arrivaltime=a->today.theday(y,m,d,a->getarrivaltime(vl));
+        LineNode total(vl.front().start_city_name,vl.back().end_city_name,vl.front().start_time,
+                       vl.back().end_time,Time(0,0,0),a->gettotalcost(vl),string("总票"),vl.front().kind,
+                       vl.front().show_start,vl.back().show_end);
+        Ticket*th=new Ticket(this,total);
+        th->showarrival(arrivaltime);
+        layout->addWidget(th);
         for(size_t j=0;j<vl.size();j++){//车票
             Ticket*t=new Ticket(this,vl[j]);
             layout->addWidget(t);
         }
+
         scrollArea->setWidget(contentWidget);
     }
 

@@ -8,6 +8,9 @@ AddTicket::AddTicket(QString tool,QWidget *parent)
 
 void AddTicket::creattickets(vector<LineNode> arr)
 {
+    if(ui->scrollAreaWidgetContents->layout()!=nullptr){
+        delete ui->scrollAreaWidgetContents->layout();
+    }
     QGridLayout*layout=new QGridLayout();
     for(auto r:arr){
         Ticket*t=new Ticket(this,r);

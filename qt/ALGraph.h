@@ -18,7 +18,7 @@ struct DayTime {
     DayTime() :year(2024), month(7), day(9) {};
     DayTime(int yy,int mm,int dd):year(yy),month(mm),day(dd){}
     void changetoday();    //确定当天日期
-    void theday(int yy, int mm, int dd, int addday);  //计算某一天经过n天后的日期并输出
+    QString theday(int yy, int mm, int dd, int addm);  //计算某一天经过n天后的日期并输出
 };
 struct Time {
     //时间格式: hour:minute,+day
@@ -91,6 +91,7 @@ struct cmp_vnode {  // 定义从 Vnode 映射 vector<InfoType> 的 map 的关键
 };
 
 
+
 class ALGraph : public QObject
 {
     Q_OBJECT
@@ -100,13 +101,14 @@ public:
     DayTime today;               //今日时间，以其为基准利用爬虫爬取数据
     explicit ALGraph(QObject *parent = nullptr);
     void changeType(); //更改单一或混合方式选择
-    void getarrivaltime(vector<LineNode>&path);  //输出依据实现一套方案的到达时刻
+    int getarrivaltime(vector<LineNode>&path);  //输出依据实现一套方案的到达时刻
     bool ifCityExist(const std::string& city_name);  // 查询城市是否存在
+    int gettotalcost(vector<LineNode>&path);
     int searchCityNum(const std::string& city_name);  // 查询城市编号
     void addCity(const std::string& city_name);  // 手动添加城市
     // 从文件中读取以添加城市
     void addCityFromFile(const char FILENAME[MAXFILESIZE]);  // 从文件读取以添加城市
-    void addLine();  // 手动添加线路
+    void addLine(LineNode&line);  // 手动添加线路
     void addLineFromFile(const char FILENAME[MAXFILESIZE]);  // 从文件读取以添加线路
 
     // 删除线路，需要手动输入起点与终点

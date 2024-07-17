@@ -22,12 +22,12 @@ void DayTime::changetoday() {              //确定当天日期
     qDebug()<< "请输入年 月 日";
     cin >> year >> month >> day;
 }
-void DayTime::theday(int yy, int mm, int dd, int addday) {   //计算某一天经过n天后的日期并输出
+QString DayTime::theday(int yy, int mm, int dd, int addm) {   //计算某一天经过n分钟后的日期并输出
     int monthday[] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 };
     if (yy % 4 == 0 && yy % 100 != 0 || yy % 400 == 0) {
         monthday[2]++;
     }
-    dd = dd + addday / 1440;
+    dd = dd + addm / 1440;
     if (dd > monthday[mm]) {
         dd -= monthday[mm];
         mm++;
@@ -36,10 +36,9 @@ void DayTime::theday(int yy, int mm, int dd, int addday) {   //计算某一天�
             mm -= 12;
         }
     }
-    int aminute = addday % 60;
-    int ahour = (addday % 1440) / 60;
-    qDebug() << "到达时间" << mm << "月 " <<
-        dd << "日 " << ahour << ':' << aminute;
+    int aminute = addm % 60;
+    int ahour = (addm % 1440) / 60;
+    return QString("预计到达时间：%1月 %2日 %3:%4").arg(mm).arg(dd).arg(ahour,2,10,QChar('0')).arg(aminute);
 }
 
 const Time getTimeByMinute(int minute) {
@@ -76,7 +75,6 @@ Time operator - (Time t1, Time t2) {
 
     return tmp_t;
 }
-
 //'>>' 重载，实现"hour:minute,+day" 的存储
 istream& operator >> (istream& in, Time& time) {
     int minute, hour;
@@ -147,6 +145,15 @@ bool ALGraph::ifCityExist(const std::string& city_name) {  // 查询城市是否
 
 }
 
+int ALGraph::gettotalcost(vector<LineNode> &path)
+{
+    int sum=0;
+    for(auto p:path){
+        sum+=p.spend_money;
+    }
+    return sum;
+}
+
 //查询城市编号，找到返回序号，找不到返回-1
 int ALGraph::searchCityNum(const string& city_name) {
 
@@ -172,13 +179,6 @@ void ALGraph::addCity(const string& city_name) {
     m.insert({ Vnode(city_name, city_num), vector<LineNode>() });
     ++city_num;
 
-    //auto it = m.cbegin();
-    //while(it!=m.cend()) {                  //利用爬虫更新新添城市与其他城市之间的路径
-    //    addfrompachong(it->first.start_city_name, city_name);
-    //    addfrompachong(city_name, it->first.start_city_name);
-    //    it++;
-    //}
-
 }
 
 void ALGraph::addCityFromFile(const char FILENAME[MAXFILESIZE]) {
@@ -202,59 +202,28 @@ void ALGraph::addCityFromFile(const char FILENAME[MAXFILESIZE]) {
 }//addCityFromFile
 
 //手动添加线路
-void ALGraph::addLine() {
-    string start_city_name;
-    //信息输入
-    cout << "请输入起点城市：";
-    cin >> start_city_name;
-
-    if (!ifCityExist(start_city_name)) {
-        cout << "起点该城市并不存在，请先创建该城市！" << endl;
+void ALGraph::addLine(LineNode&line) {
+    if (!ifCityExist(line.start_city_name)) {
+        addCity(line.start_city_name);
+    }
+    if (!ifCityExist(line.end_city_name)) {
+        addCity(line.end_city_name);
         return;
     }
 
-    string end_city_name;
-    Time start_time, end_time;
-    Time spend_time;
-    float spend_money;
-    string amount;  // 火车或飞机的班次
-    int kind;
-    cout << "请输入终点城市：";
-    cin >> end_city_name;
-    if (!ifCityExist(end_city_name)) {
-        cout << "终点城市" << end_city_name << "并不存在，请先创建该城市！" << endl;
-        return;
-    }
-    cout << "请输入班次名：";
-    cin >> amount;
-    cout << "请输入出发时间(格式为hh:mm):";
-    cin >> start_time;
-    cout << "请输入到达时间(格式为hh:mm):";
-    cin >> end_time;
-
-    if (start_time < end_time) {
-        spend_time = end_time - start_time;
-    }
-    else {
-        cout << "出发时间大于到达时间，输入错误，请重新输入！" << endl;
-        return;
-    }
-
-    cout << "请输入票价：";
-    cin >> spend_money;
-    cout << "请输入交通工具";
-    cin >> kind;
-    auto it = m.find(Vnode(start_city_name));
+    auto it = m.find(Vnode(line.start_city_name));
     if (it != m.end()) {
-        (*it).second.push_back(LineNode(start_city_name, end_city_name, start_time, end_time,
-                                        spend_time, spend_money, amount, kind,start_city_name,end_city_name));
-        cout << "添加路线成功！" << endl;
+        (*it).second.push_back(LineNode(line.start_city_name, line.end_city_name, line.start_time, line.end_time,
+                                        line.spend_time, line.spend_money, line.amount, line.kind,
+                                        line.start_city_name,line.end_city_name));
     }
 
     ++line_num;
+    qDebug()<<"现在路线数："<<line_num;
 
 }//addLine
-void ALGraph::getarrivaltime(vector<LineNode>& path) {                      //得到到达时刻
+int ALGraph::getarrivaltime(vector<LineNode>& path) {    //得到到达时刻
+    if(path.empty()){return 0;}
     int time_sum = path.at(0).start_time.getTotalMintue();
     for (size_t i = 0; i < path.size(); ++i) {
         if (i == 0) {  // 某路径的第一条线路，不用考虑隔天等待的问题
@@ -274,7 +243,7 @@ void ALGraph::getarrivaltime(vector<LineNode>& path) {                      //�
             }
         }
     }
-    today.theday(today.year, today.month, today.day, time_sum);
+    return time_sum;
 }
 //依靠爬虫实现对路径两个城市之间路径的读取
 void ALGraph::addfrompachong(string sc,string ec) {

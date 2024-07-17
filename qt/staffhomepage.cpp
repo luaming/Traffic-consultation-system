@@ -6,6 +6,14 @@ StaffHomePage::StaffHomePage(QWidget *parent)
 {
     ui->setupUi(this);
     this->SM=new StaffModify;
+    m_pCrawlerWidget = new CrawlerWidget(this);
+    connect(m_pCrawlerWidget,&CrawlerWidget::Back,this,&StaffHomePage::do_back);
+}
+
+StaffHomePage::~StaffHomePage()
+{
+    delete m_pCrawlerWidget;
+    m_pCrawlerWidget = nullptr;
 }
 
 void StaffHomePage::on_modifybtn_clicked()
@@ -23,13 +31,11 @@ void StaffHomePage::on_trainbtn_clicked()
     algraph->mkind=2;
     ticketresults=new AddTicket("Train");
     this->close();
-    ticketresults->show();
-    connect(ticketresults,&AddTicket::SHP,this,[=](){ticketresults->close();this->show();});
-    string startcity=this->ui->lineEdit_14->text().toStdString();
-    string endcity=this->ui->lineEdit_15->text().toStdString();
-    string today=this->ui->lineEdit_16->text().toStdString();
-    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,2);
-    ticketresults->creattickets(arr);
+    m_pCrawlerWidget->fromStation=this->ui->lineEdit_14->text();
+    m_pCrawlerWidget->toStation=this->ui->lineEdit_15->text();
+    m_pCrawlerWidget->date=this->ui->lineEdit_16->text();
+    m_pCrawlerWidget->setVisible(true);
+    m_pCrawlerWidget->creattickesfromcrawler();
 }
 
 
@@ -60,4 +66,10 @@ void StaffHomePage::on_carbtn_clicked()
     string today=this->ui->lineEdit_9->text().toStdString();
     std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,3);
     ticketresults->creattickets(arr);
+}
+
+void StaffHomePage::do_back()
+{
+    this->show();
+    m_pCrawlerWidget->setVisible(false);
 }
