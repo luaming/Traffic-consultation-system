@@ -38,7 +38,7 @@ QString DayTime::theday(int yy, int mm, int dd, int addm) {   //计算某一天�
     }
     int aminute = addm % 60;
     int ahour = (addm % 1440) / 60;
-    return QString("预计到达时间：%1月 %2日 %3:%4").arg(mm).arg(dd).arg(ahour,2,10,QChar('0')).arg(aminute);
+    return QString("预计到达时间：%1月 %2日 %3:%4").arg(mm).arg(dd).arg(ahour,2,10,QChar('0')).arg(aminute,2,10,QChar('0'));
 }
 
 const Time getTimeByMinute(int minute) {
@@ -145,9 +145,9 @@ bool ALGraph::ifCityExist(const std::string& city_name) {  // 查询城市是否
 
 }
 
-int ALGraph::gettotalcost(vector<LineNode> &path)
+float ALGraph::gettotalcost(vector<LineNode> &path)
 {
-    int sum=0;
+    float sum=0;
     for(auto p:path){
         sum+=p.spend_money;
     }
@@ -346,11 +346,11 @@ void ALGraph::delCity(const string& city_name) {
 
     if (!ifCityExist(city_name)) {
 
-        cout << city_name << "不存在！请重新输入正确的城市名或者新建该城市！" << endl;
+        qDebug()<<QString::fromStdString(city_name)<<"不存在！请重新输入正确的城市名或者新建该城市！";
         return;
     }
 
-    cout << "正在删除" << city_name << "城市及其相关线路！" << endl;
+    qDebug() << "正在删除" << QString::fromStdString(city_name) << "城市及其相关线路！" ;
     city_num = city_num - 1;
 
     // 删除以该城市为起点的线路数据
@@ -377,7 +377,7 @@ void ALGraph::delCity(const string& city_name) {
         }
     }
 
-    cout << "已删除" << city_name << "城市及其相关线路！" << endl;
+    qDebug() << "已删除" << QString::fromStdString(city_name) << "城市及其相关线路！" ;
 
 }//delCity
 

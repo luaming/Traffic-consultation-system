@@ -103,7 +103,7 @@ public:
     void changeType(); //更改单一或混合方式选择
     int getarrivaltime(vector<LineNode>&path);  //输出依据实现一套方案的到达时刻
     bool ifCityExist(const std::string& city_name);  // 查询城市是否存在
-    int gettotalcost(vector<LineNode>&path);
+    float gettotalcost(vector<LineNode>&path);
     int searchCityNum(const std::string& city_name);  // 查询城市编号
     void addCity(const std::string& city_name);  // 手动添加城市
     // 从文件中读取以添加城市

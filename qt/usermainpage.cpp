@@ -76,6 +76,14 @@ void UserMainPage::on_radioButton_4_clicked(bool checked)
 void UserMainPage::creattickts(vector<LineNode> &arr)
 {
     if(ui->scrollAreaWidgetContents->layout()!=nullptr){
+        QLayoutItem*child;
+        while((child=ui->scrollAreaWidgetContents->layout()->takeAt(0))!=0){
+            if(child->widget()){
+                child->widget()->setParent(nullptr);
+                delete child->widget();
+            }
+        }
+        delete child;
         delete ui->scrollAreaWidgetContents->layout();
     }
     QHBoxLayout*layout=new QHBoxLayout();

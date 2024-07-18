@@ -9,7 +9,7 @@
 #include <QHeaderView>
 #include <QDate>
 #include<fstream>
-#include"ALGraph.h"
+
 #include"ticket.h"
 extern ALGraph*algraph;
 using namespace std;
@@ -63,10 +63,11 @@ void CrawlerWidget::onReplyFinished(QNetworkReply *reply) {
     QJsonDocument jsonDoc = QJsonDocument::fromJson(response);
     QJsonObject jsonObj = jsonDoc.object();
     QJsonArray jsonArray = jsonObj["data"].toArray();
+    int a=-1,b=0;
     QStringList headers = {"车次", "起点站", "起点站代号", "终点站", "终点站代号", "出发站", "出发站代号", "到站", "到站代号",
                            "开始时", "结束时", "持续时间", "商务座", "一等座", "二等座", "高级软卧", "软卧", "硬卧", "软座", "硬座", "站票"};
     for (int i = 0; i < jsonArray.size(); ++i) {
-
+        a++;
         QJsonObject obj = jsonArray[i].toObject()["queryLeftNewDTO"].toObject();
 
 
@@ -103,7 +104,9 @@ void CrawlerWidget::onReplyFinished(QNetworkReply *reply) {
         LineNode line(start_city_name,end_city_name,start_t, end_t,
                       spend_t, money, amount, 2,show_start,show_end);
         Ticket*t=new Ticket(this,line);
-        layout->addWidget(t);
+        layout->addWidget(t,b,a);
+
+        if(a==1){a=-1;b++;}
     }
     ui->scrollAreaWidgetContents->setLayout(layout);
 
@@ -135,6 +138,31 @@ void CrawlerWidget::creattickesfromcrawler()
     manager->get(QNetworkRequest(QUrl(url)));
 }
 
+void CrawlerWidget::creattickets(vector<LineNode> &arr)
+{
+    if(ui->scrollAreaWidgetContents->layout()!=nullptr){
+        QLayoutItem*child;
+        while((child=ui->scrollAreaWidgetContents->layout()->takeAt(0))!=0){
+            if(child->widget()){
+                child->widget()->setParent(nullptr);
+                delete child->widget();
+            }
+        }
+        delete child;
+        delete ui->scrollAreaWidgetContents->layout();
+    }
+    QGridLayout*layout=new QGridLayout();
+    int i=-1;int j=0;
+    for(auto r:arr){
+        i++;
+        Ticket*t=new Ticket(this,r);
+        layout->addWidget(t,j,i);
+
+        if(i==1){i=-1;j++;}
+    }//此处添加
+    ui->scrollAreaWidgetContents->setLayout(layout);
+}
+
 void CrawlerWidget::on_backbtn_clicked()
 {
     emit Back();
@@ -145,12 +173,17 @@ void CrawlerWidget::on_addbtn_clicked()
 {
     QLayout*lay=ui->scrollAreaWidgetContents->layout();
     int num=lay->count();
+    vector<LineNode>narr;
     for(int i=0;i<num;i++){
         QLayoutItem*it=lay->itemAt(i);
         Ticket*ticket=qobject_cast<Ticket*>(it->widget());
         if(ticket->choosed){
             algraph->addLine(ticket->line);
         }
+        else{
+            narr.push_back(ticket->line);
+        }
     }
+    creattickets(narr);
 }
 
