@@ -487,7 +487,12 @@ release/moc_addticket.cpp: ../../addticket.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		release/moc_predefs.h \
 		D:/Qtnew/6.7.2/mingw_64/bin/moc.exe
@@ -695,16 +700,71 @@ release/moc_homepage.cpp: ../../homepage.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		../../staffmodify.h \
 		ui_SatffModify.h \
+		../../crawler_widget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QDialog \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkrequest.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QSharedDataPointer \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QString \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QUrl \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QVariant \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslConfiguration \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qhostaddress.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslerror.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcryptographichash.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qdatetime.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qssl.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QFlags \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QMetaType \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkReply \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QIODevice \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkRequest \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QTableWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtablewidget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
 		../../userhomepage.h \
 		../../usermainpage.h \
 		ui_UserMainPage.h \
 		ui_UserHomePage.h \
 		../../userticket.h \
 		ui_SearchTicket.h \
+		../../ALGraph.h \
 		ui_HomePage.h \
 		release/moc_predefs.h \
 		D:/Qtnew/6.7.2/mingw_64/bin/moc.exe
@@ -911,10 +971,64 @@ release/moc_login.cpp: ../../login.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		../../staffmodify.h \
 		ui_SatffModify.h \
+		../../crawler_widget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QDialog \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkrequest.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QSharedDataPointer \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QString \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QUrl \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QVariant \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslConfiguration \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qhostaddress.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslerror.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcryptographichash.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qdatetime.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qssl.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QFlags \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QMetaType \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkReply \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QIODevice \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkRequest \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QTableWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtablewidget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
 		release/moc_predefs.h \
 		D:/Qtnew/6.7.2/mingw_64/bin/moc.exe
 	D:\Qtnew\6.7.2\mingw_64\bin\moc.exe $(DEFINES) --include D:/Qtprojects/Traffic-consultation-system/qt/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/Qtnew/6.7.2/mingw_64/mkspecs/win32-g++ -ID:/Qtprojects/Traffic-consultation-system/qt -ID:/Qtnew/6.7.2/mingw_64/include -ID:/Qtnew/6.7.2/mingw_64/include/QtWidgets -ID:/Qtnew/6.7.2/mingw_64/include/QtGui -ID:/Qtnew/6.7.2/mingw_64/include/QtNetwork -ID:/Qtnew/6.7.2/mingw_64/include/QtCore -I. -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Qtnew/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\login.h -o release\moc_login.cpp
@@ -1119,10 +1233,64 @@ release/moc_staffhomepage.cpp: ../../staffhomepage.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		../../staffmodify.h \
 		ui_SatffModify.h \
+		../../crawler_widget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QDialog \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkrequest.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QSharedDataPointer \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QString \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QUrl \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QVariant \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslConfiguration \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qhostaddress.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslerror.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcryptographichash.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qdatetime.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qssl.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QFlags \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QMetaType \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkReply \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QIODevice \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkRequest \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QTableWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtablewidget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
 		release/moc_predefs.h \
 		D:/Qtnew/6.7.2/mingw_64/bin/moc.exe
 	D:\Qtnew\6.7.2\mingw_64\bin\moc.exe $(DEFINES) --include D:/Qtprojects/Traffic-consultation-system/qt/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/Qtnew/6.7.2/mingw_64/mkspecs/win32-g++ -ID:/Qtprojects/Traffic-consultation-system/qt -ID:/Qtnew/6.7.2/mingw_64/include -ID:/Qtnew/6.7.2/mingw_64/include/QtWidgets -ID:/Qtnew/6.7.2/mingw_64/include/QtGui -ID:/Qtnew/6.7.2/mingw_64/include/QtNetwork -ID:/Qtnew/6.7.2/mingw_64/include/QtCore -I. -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Qtnew/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\staffhomepage.h -o release\moc_staffhomepage.cpp
@@ -1325,7 +1493,12 @@ release/moc_staffmodify.cpp: ../../staffmodify.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		release/moc_predefs.h \
 		D:/Qtnew/6.7.2/mingw_64/bin/moc.exe
@@ -1524,7 +1697,12 @@ release/moc_ticket.cpp: ../../ticket.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		release/moc_predefs.h \
 		D:/Qtnew/6.7.2/mingw_64/bin/moc.exe
@@ -1725,7 +1903,12 @@ release/moc_userhomepage.cpp: ../../userhomepage.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -1734,6 +1917,7 @@ release/moc_userhomepage.cpp: ../../userhomepage.h \
 		ui_UserHomePage.h \
 		../../userticket.h \
 		ui_SearchTicket.h \
+		../../ALGraph.h \
 		release/moc_predefs.h \
 		D:/Qtnew/6.7.2/mingw_64/bin/moc.exe
 	D:\Qtnew\6.7.2\mingw_64\bin\moc.exe $(DEFINES) --include D:/Qtprojects/Traffic-consultation-system/qt/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/Qtnew/6.7.2/mingw_64/mkspecs/win32-g++ -ID:/Qtprojects/Traffic-consultation-system/qt -ID:/Qtnew/6.7.2/mingw_64/include -ID:/Qtnew/6.7.2/mingw_64/include/QtWidgets -ID:/Qtnew/6.7.2/mingw_64/include/QtGui -ID:/Qtnew/6.7.2/mingw_64/include/QtNetwork -ID:/Qtnew/6.7.2/mingw_64/include/QtCore -I. -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Qtnew/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\userhomepage.h -o release\moc_userhomepage.cpp
@@ -1932,7 +2116,12 @@ release/moc_usermainpage.cpp: ../../usermainpage.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -2136,12 +2325,18 @@ release/moc_userticket.cpp: ../../userticket.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
 		ui_SearchTicket.h \
+		../../ALGraph.h \
 		release/moc_predefs.h \
 		D:/Qtnew/6.7.2/mingw_64/bin/moc.exe
 	D:\Qtnew\6.7.2\mingw_64\bin\moc.exe $(DEFINES) --include D:/Qtprojects/Traffic-consultation-system/qt/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release/moc_predefs.h -ID:/Qtnew/6.7.2/mingw_64/mkspecs/win32-g++ -ID:/Qtprojects/Traffic-consultation-system/qt -ID:/Qtnew/6.7.2/mingw_64/include -ID:/Qtnew/6.7.2/mingw_64/include/QtWidgets -ID:/Qtnew/6.7.2/mingw_64/include/QtGui -ID:/Qtnew/6.7.2/mingw_64/include/QtNetwork -ID:/Qtnew/6.7.2/mingw_64/include/QtCore -I. -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Qtnew/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Qtnew/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\..\userticket.h -o release\moc_userticket.cpp
@@ -2644,7 +2839,12 @@ release/addticket.o: ../../addticket.cpp ../../addticket.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\addticket.o ..\..\addticket.cpp
 
@@ -2964,16 +3164,71 @@ release/homepage.o: ../../homepage.cpp ../../homepage.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		../../staffmodify.h \
 		ui_SatffModify.h \
+		../../crawler_widget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QDialog \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkrequest.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QSharedDataPointer \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QString \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QUrl \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QVariant \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslConfiguration \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qhostaddress.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslerror.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcryptographichash.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qdatetime.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qssl.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QFlags \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QMetaType \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkReply \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QIODevice \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkRequest \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QTableWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtablewidget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
 		../../userhomepage.h \
 		../../usermainpage.h \
 		ui_UserMainPage.h \
 		ui_UserHomePage.h \
 		../../userticket.h \
 		ui_SearchTicket.h \
+		../../ALGraph.h \
 		ui_HomePage.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\homepage.o ..\..\homepage.cpp
 
@@ -3179,18 +3434,72 @@ release/main.o: ../../main.cpp ../../homepage.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		../../staffmodify.h \
 		ui_SatffModify.h \
+		../../crawler_widget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QDialog \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkrequest.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QSharedDataPointer \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QString \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QUrl \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QVariant \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslConfiguration \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qhostaddress.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslerror.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcryptographichash.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qdatetime.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qssl.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QFlags \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QMetaType \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkReply \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QIODevice \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkRequest \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QTableWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtablewidget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
 		../../userhomepage.h \
 		../../usermainpage.h \
 		ui_UserMainPage.h \
 		ui_UserHomePage.h \
 		../../userticket.h \
 		ui_SearchTicket.h \
+		../../ALGraph.h \
 		ui_HomePage.h \
-		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QApplication \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\..\main.cpp
@@ -3396,14 +3705,67 @@ release/login.o: ../../login.cpp ../../login.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		../../staffmodify.h \
 		ui_SatffModify.h \
+		../../crawler_widget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QDialog \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkrequest.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QSharedDataPointer \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QString \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QUrl \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QVariant \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslConfiguration \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qhostaddress.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslerror.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcryptographichash.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qdatetime.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qssl.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QFlags \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QMetaType \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkReply \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QIODevice \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkRequest \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QTableWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtablewidget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
 		ui_login.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QMessagebox \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
-		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\login.o ..\..\login.cpp
 
@@ -3607,10 +3969,64 @@ release/staffhomepage.o: ../../staffhomepage.cpp ../../staffhomepage.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		../../staffmodify.h \
 		ui_SatffModify.h \
+		../../crawler_widget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QDialog \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtnetworkexports.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkrequest.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QSharedDataPointer \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QString \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QUrl \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QVariant \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslConfiguration \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qhostaddress.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslerror.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcryptographichash.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qdatetime.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qcalendar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qssl.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QFlags \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QMetaType \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkReply \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QIODevice \
+		D:/Qtnew/6.7.2/mingw_64/include/QtNetwork/QNetworkRequest \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QTableWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtablewidget.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyleoption.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qvalidator.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
 		../../homepage.h \
 		../../login.h \
 		../../userhomepage.h \
@@ -3619,6 +4035,7 @@ release/staffhomepage.o: ../../staffhomepage.cpp ../../staffhomepage.h \
 		ui_UserHomePage.h \
 		../../userticket.h \
 		ui_SearchTicket.h \
+		../../ALGraph.h \
 		ui_HomePage.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\staffhomepage.o ..\..\staffhomepage.cpp
 
@@ -3820,7 +4237,12 @@ release/staffmodify.o: ../../staffmodify.cpp ../../staffmodify.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		../../crawler_widget.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QDialog \
@@ -3859,8 +4281,6 @@ release/staffmodify.o: ../../staffmodify.cpp ../../staffmodify.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtablewidget.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtableview.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemview.h \
-		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtCore/qitemselectionmodel.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -3872,7 +4292,21 @@ release/staffmodify.o: ../../staffmodify.cpp ../../staffmodify.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qstyle.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabbar.h \
-		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qrubberband.h
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qrubberband.h \
+		../../homepage.h \
+		../../login.h \
+		../../staffhomepage.h \
+		ui_StaffHomePage.h \
+		../../addticket.h \
+		ui_AddTickets.h \
+		../../userhomepage.h \
+		../../usermainpage.h \
+		ui_UserMainPage.h \
+		ui_UserHomePage.h \
+		../../userticket.h \
+		ui_SearchTicket.h \
+		../../ALGraph.h \
+		ui_HomePage.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\staffmodify.o ..\..\staffmodify.cpp
 
 release/ticket.o: ../../ticket.cpp ../../ticket.h \
@@ -4068,7 +4502,12 @@ release/ticket.o: ../../ticket.cpp ../../ticket.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		ui_ticket.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\ticket.o ..\..\ticket.cpp
@@ -4268,7 +4707,12 @@ release/userhomepage.o: ../../userhomepage.cpp ../../userhomepage.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -4277,15 +4721,7 @@ release/userhomepage.o: ../../userhomepage.cpp ../../userhomepage.h \
 		ui_UserHomePage.h \
 		../../userticket.h \
 		ui_SearchTicket.h \
-		../../homepage.h \
-		../../login.h \
-		../../staffhomepage.h \
-		ui_StaffHomePage.h \
-		../../addticket.h \
-		ui_AddTickets.h \
-		../../staffmodify.h \
-		ui_SatffModify.h \
-		ui_HomePage.h
+		../../ALGraph.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\userhomepage.o ..\..\userhomepage.cpp
 
 release/usermainpage.o: ../../usermainpage.cpp ../../usermainpage.h \
@@ -4482,25 +4918,17 @@ release/usermainpage.o: ../../usermainpage.cpp ../../usermainpage.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
-		ui_UserMainPage.h \
-		../../homepage.h \
-		../../login.h \
-		../../staffhomepage.h \
-		ui_StaffHomePage.h \
-		../../addticket.h \
-		ui_AddTickets.h \
-		../../staffmodify.h \
-		ui_SatffModify.h \
-		../../userhomepage.h \
-		ui_UserHomePage.h \
-		../../userticket.h \
-		ui_SearchTicket.h \
-		ui_HomePage.h
+		ui_UserMainPage.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\usermainpage.o ..\..\usermainpage.cpp
 
 release/userticket.o: ../../userticket.cpp ../../userticket.h \
@@ -4697,12 +5125,18 @@ release/userticket.o: ../../userticket.cpp ../../userticket.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qframe.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
 		../../algraph.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
-		ui_SearchTicket.h
+		ui_SearchTicket.h \
+		../../ALGraph.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\userticket.o ..\..\userticket.cpp
 
 release/crawler_widget.o: ../../crawler_widget.cpp ../../crawler_widget.h \
@@ -4962,7 +5396,21 @@ release/crawler_widget.o: ../../crawler_widget.cpp ../../crawler_widget.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHeaderView \
 		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qheaderview.h \
-		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDate
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDate \
+		../../ALGraph.h \
+		../../ticket.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qtnew/6.7.2/mingw_64/include/QtWidgets/QWidget \
+		D:/Qtnew/6.7.2/mingw_64/include/QtCore/QDebug \
+		../../algraph.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\crawler_widget.o ..\..\crawler_widget.cpp
 
 release/qrc_res.o: release/qrc_res.cpp 

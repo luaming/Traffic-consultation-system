@@ -37,7 +37,6 @@ public:
     QFrame *line;
     QFrame *line_2;
     QPushButton *stfbtn;
-    QPushButton *stfbtnCrawler;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
 
@@ -143,22 +142,6 @@ public:
 "QPushButton:pressed{  background-color: #bebebe;}\n"
 ""));
         stfbtn->setIconSize(QSize(20, 20));
-        stfbtnCrawler = new QPushButton(centralwidget);
-        stfbtnCrawler->setObjectName("stfbtnCrawler");
-        stfbtnCrawler->setGeometry(QRect(680, 10, 111, 41));
-        sizePolicy.setHeightForWidth(stfbtnCrawler->sizePolicy().hasHeightForWidth());
-        stfbtnCrawler->setSizePolicy(sizePolicy);
-        stfbtnCrawler->setMinimumSize(QSize(0, 9));
-        stfbtnCrawler->setFont(font3);
-        stfbtnCrawler->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        stfbtnCrawler->setLayoutDirection(Qt::LeftToRight);
-        stfbtnCrawler->setStyleSheet(QString::fromUtf8("*{\n"
-"background-color:#d9d9d9;\n"
-"border-radius: 20px;\n"
-"}\n"
-"QPushButton:pressed{  background-color: #bebebe;}\n"
-""));
-        stfbtnCrawler->setIconSize(QSize(20, 20));
         scrollArea = new QScrollArea(centralwidget);
         scrollArea->setObjectName("scrollArea");
         scrollArea->setGeometry(QRect(40, 70, 721, 321));
@@ -183,7 +166,6 @@ public:
         homebtn->setText(QCoreApplication::translate("StaffModify", "\351\246\226\351\241\265", nullptr));
         pushButton_3->setText(QCoreApplication::translate("StaffModify", "\344\277\256\346\224\271", nullptr));
         stfbtn->setText(QCoreApplication::translate("StaffModify", "\345\210\240\351\231\244", nullptr));
-        stfbtnCrawler->setText(QCoreApplication::translate("StaffModify", "\347\210\254\350\231\253", nullptr));
     } // retranslateUi
 
 };

@@ -95,7 +95,7 @@ public:
         label_2->setAlignment(Qt::AlignCenter);
         stfbtn = new QPushButton(centralwidget);
         stfbtn->setObjectName("stfbtn");
-        stfbtn->setGeometry(QRect(10, 10, 41, 41));
+        stfbtn->setGeometry(QRect(20, 10, 51, 51));
         QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -110,7 +110,7 @@ public:
         stfbtn->setLayoutDirection(Qt::LeftToRight);
         stfbtn->setStyleSheet(QString::fromUtf8("*{\n"
 "background-color:#d9d9d9;\n"
-"border-radius: 20px;\n"
+"border-radius: 25px;\n"
 "}\n"
 "QPushButton:pressed{  background-color: #bebebe;}\n"
 ""));

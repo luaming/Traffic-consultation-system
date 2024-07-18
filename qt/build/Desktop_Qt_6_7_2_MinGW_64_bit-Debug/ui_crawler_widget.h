@@ -11,10 +11,9 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QTableWidget>
+#include <QtWidgets/QScrollArea>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,36 +21,70 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
-    QWidget *centralwidget;
-    QLineEdit *fromStationLineEdit;
-    QLineEdit *toStationLineEdit;
-    QLineEdit *dateLineEdit;
-    QPushButton *fetchButton;
-    QTableWidget *tableWidget;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
+    QPushButton *backbtn;
+    QFrame *line;
+    QPushButton *addbtn;
 
     void setupUi(QWidget *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(800, 600);
-        centralwidget = new QWidget(MainWindow);
-        centralwidget->setObjectName("centralwidget");
-        centralwidget->setGeometry(QRect(0, 0, 793, 571));
-        fromStationLineEdit = new QLineEdit(centralwidget);
-        fromStationLineEdit->setObjectName("fromStationLineEdit");
-        fromStationLineEdit->setGeometry(QRect(40, 40, 191, 31));
-        toStationLineEdit = new QLineEdit(centralwidget);
-        toStationLineEdit->setObjectName("toStationLineEdit");
-        toStationLineEdit->setGeometry(QRect(280, 40, 191, 31));
-        dateLineEdit = new QLineEdit(centralwidget);
-        dateLineEdit->setObjectName("dateLineEdit");
-        dateLineEdit->setGeometry(QRect(520, 40, 110, 31));
-        fetchButton = new QPushButton(centralwidget);
-        fetchButton->setObjectName("fetchButton");
-        fetchButton->setGeometry(QRect(660, 40, 93, 31));
-        tableWidget = new QTableWidget(centralwidget);
-        tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(40, 100, 711, 431));
+        MainWindow->resize(800, 500);
+        scrollArea = new QScrollArea(MainWindow);
+        scrollArea->setObjectName("scrollArea");
+        scrollArea->setGeometry(QRect(40, 0, 721, 391));
+        scrollArea->setMinimumSize(QSize(721, 321));
+        scrollArea->setStyleSheet(QString::fromUtf8(""));
+        scrollArea->setWidgetResizable(true);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName("scrollAreaWidgetContents");
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 719, 389));
+        scrollArea->setWidget(scrollAreaWidgetContents);
+        backbtn = new QPushButton(MainWindow);
+        backbtn->setObjectName("backbtn");
+        backbtn->setGeometry(QRect(50, 410, 51, 51));
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(backbtn->sizePolicy().hasHeightForWidth());
+        backbtn->setSizePolicy(sizePolicy);
+        backbtn->setMinimumSize(QSize(0, 9));
+        QFont font;
+        font.setFamilies({QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221")});
+        font.setPointSize(18);
+        backbtn->setFont(font);
+        backbtn->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        backbtn->setLayoutDirection(Qt::LeftToRight);
+        backbtn->setStyleSheet(QString::fromUtf8("*{\n"
+"background-color:#d9d9d9;\n"
+"border-radius: 25px;\n"
+"}\n"
+"QPushButton:pressed{  background-color: #bebebe;}\n"
+""));
+        backbtn->setIconSize(QSize(20, 20));
+        line = new QFrame(MainWindow);
+        line->setObjectName("line");
+        line->setGeometry(QRect(0, 390, 800, 3));
+        line->setFrameShape(QFrame::Shape::HLine);
+        line->setFrameShadow(QFrame::Shadow::Sunken);
+        addbtn = new QPushButton(MainWindow);
+        addbtn->setObjectName("addbtn");
+        addbtn->setGeometry(QRect(660, 420, 101, 51));
+        sizePolicy.setHeightForWidth(addbtn->sizePolicy().hasHeightForWidth());
+        addbtn->setSizePolicy(sizePolicy);
+        addbtn->setMinimumSize(QSize(0, 9));
+        addbtn->setFont(font);
+        addbtn->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        addbtn->setLayoutDirection(Qt::LeftToRight);
+        addbtn->setStyleSheet(QString::fromUtf8("*{\n"
+"background-color:#d9d9d9;\n"
+"border-radius: 25px;\n"
+"}\n"
+"QPushButton:pressed{  background-color: #bebebe;}\n"
+""));
+        addbtn->setIconSize(QSize(20, 20));
 
         retranslateUi(MainWindow);
 
@@ -61,8 +94,8 @@ public:
     void retranslateUi(QWidget *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Train Schedule", nullptr));
-        dateLineEdit->setPlaceholderText(QCoreApplication::translate("MainWindow", "yyyy-MM-dd", nullptr));
-        fetchButton->setText(QCoreApplication::translate("MainWindow", "Fetch", nullptr));
+        backbtn->setText(QCoreApplication::translate("MainWindow", "\350\277\224\345\233\236", nullptr));
+        addbtn->setText(QCoreApplication::translate("MainWindow", "\346\267\273\345\212\240", nullptr));
     } // retranslateUi
 
 };

@@ -40,10 +40,10 @@ public:
         if (Ticket->objectName().isEmpty())
             Ticket->setObjectName("Ticket");
         Ticket->resize(351, 91);
-        Ticket->setMinimumSize(QSize(351, 31));
+        Ticket->setMinimumSize(QSize(351, 91));
         stime = new QLabel(Ticket);
         stime->setObjectName("stime");
-        stime->setGeometry(QRect(10, 3, 72, 31));
+        stime->setGeometry(QRect(10, 3, 81, 31));
         stime->setMinimumSize(QSize(72, 29));
         QFont font;
         font.setFamilies({QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221")});
@@ -55,14 +55,14 @@ public:
         stime->setAlignment(Qt::AlignCenter);
         line = new QFrame(Ticket);
         line->setObjectName("line");
-        line->setGeometry(QRect(83, 22, 77, 3));
+        line->setGeometry(QRect(85, 22, 74, 3));
         line->setFrameShape(QFrame::Shape::HLine);
         line->setFrameShadow(QFrame::Shadow::Sunken);
         tool = new QLabel(Ticket);
         tool->setObjectName("tool");
         tool->setGeometry(QRect(102, 6, 41, 16));
         QFont font1;
-        font1.setPointSize(11);
+        font1.setPointSize(8);
         tool->setFont(font1);
         tool->setStyleSheet(QString::fromUtf8("background-color:rgba(0,0,0,0);"));
         tool->setAlignment(Qt::AlignCenter);
@@ -92,7 +92,7 @@ public:
         cost->setAlignment(Qt::AlignCenter);
         img = new QLabel(Ticket);
         img->setObjectName("img");
-        img->setGeometry(QRect(300, 40, 40, 41));
+        img->setGeometry(QRect(289, 40, 51, 41));
         img->setStyleSheet(QString::fromUtf8("background-color:rgba(0,0,0,0);"));
         label_6 = new QLabel(Ticket);
         label_6->setObjectName("label_6");
@@ -130,7 +130,7 @@ public:
         arrive->setStyleSheet(QString::fromUtf8("background-color:rgba(0,0,0,0);"));
         time = new QLabel(Ticket);
         time->setObjectName("time");
-        time->setGeometry(QRect(80, 20, 71, 16));
+        time->setGeometry(QRect(83, 22, 71, 16));
         time->setFont(font1);
         time->setStyleSheet(QString::fromUtf8("background-color:rgba(0,0,0,0);"));
         time->setAlignment(Qt::AlignCenter);
@@ -142,7 +142,8 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(background->sizePolicy().hasHeightForWidth());
         background->setSizePolicy(sizePolicy1);
-        background->setMinimumSize(QSize(0, 9));
+        background->setMinimumSize(QSize(351, 91));
+        background->setBaseSize(QSize(0, 0));
         QFont font4;
         font4.setFamilies({QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221")});
         font4.setPointSize(18);
@@ -151,11 +152,10 @@ public:
         background->setLayoutDirection(Qt::LeftToRight);
         background->setStyleSheet(QString::fromUtf8(""));
         background->setIconSize(QSize(20, 20));
+        line->raise();
         background->raise();
         tool->raise();
-        time->raise();
         stime->raise();
-        line->raise();
         etime->raise();
         cost->raise();
         img->raise();
@@ -164,6 +164,7 @@ public:
         splace->raise();
         eplace->raise();
         arrive->raise();
+        time->raise();
 
         retranslateUi(Ticket);
 
