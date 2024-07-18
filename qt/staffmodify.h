@@ -17,6 +17,8 @@ signals:
 private slots:
     void on_homebtn_clicked();
     void on_stfbtn_clicked();
+    void on_stfbtn_delete_clicked();
+    void on_stfbtn_add_clicked();
 };
 
 #endif // STAFFMODIFY_H

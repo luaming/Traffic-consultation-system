@@ -5,6 +5,7 @@
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 #include <QTableWidget>
+#include"ALGraph.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,6 +18,7 @@ public:
     CrawlerWidget(QWidget *parent = nullptr);
     ~CrawlerWidget();
     void creattickesfromcrawler();
+    void creattickets(vector<LineNode>&arr);
     QString date;
     QString fromStation;
     QString toStation;
