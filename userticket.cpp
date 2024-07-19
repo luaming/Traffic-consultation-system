@@ -25,8 +25,11 @@ void UserTicket::creatzhongzhuantickts(vector<vector<LineNode>>&az,int y,int m,i
 {
     ui->tabWidget->removeTab(1);
     ui->tabWidget->removeTab(0);
+    int count=0;
     for(size_t i=0;i<az.size();i++){//路径数
-        QString s=QString("路径%1").arg(i+1);
+        if(az[i].size()==1){break;}
+        count++;
+        QString s=QString("路径%1").arg(count);
         QScrollArea* scrollArea = new QScrollArea;
         ui->tabWidget->addTab(scrollArea,s);
         QWidget* contentWidget = new QWidget;

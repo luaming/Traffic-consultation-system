@@ -29,7 +29,7 @@ void UserHomePage::on_trainbtn_clicked()
     string today=this->ui->lineEdit_16->text().toStdString();
     algraph->mkind=2;
     std::vector<vector<LineNode>> arz=algraph->getPathsByCity(startcity,endcity);
-    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,2);
+    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
     ticketresults->creattickts(arr);
     stringstream ss;
     char c;
@@ -74,7 +74,7 @@ void UserHomePage::on_carbtn_clicked()
     string today=this->ui->lineEdit_9->text().toStdString();
     algraph->mkind=3;
     algraph->printPathsByCity(startcity,endcity);
-    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,3);
+    std::vector<LineNode>arr=algraph->printstraightPath(startcity,endcity,1);
     ticketresults->creattickts(arr);
     std::vector<vector<LineNode>> arz=algraph->getPathsByCity(startcity,endcity);
     stringstream ss;
