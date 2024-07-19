@@ -8,5 +8,6 @@
         <file>HomePage.jpg</file>
         <file>earth.png</file>
         <file>backbtn.png</file>
+        <file>logo.ico</file>
     </qresource>
 </RCC>
